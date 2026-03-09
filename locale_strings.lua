@@ -119,6 +119,7 @@ for _, v in ipairs({
   "CTRL for damage",
   "CTRL for healing",
   "Current client build",
+  "Currently casting spell info. Move me!",
   "Custom armor value",
   "Custom player level",
   "Damage",
