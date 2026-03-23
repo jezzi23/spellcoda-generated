@@ -1261,7 +1261,7 @@ sc.spells = {
 		base_id = 768,
 		gcd = 1.5000001,
 		train = 2000,
-		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.resource_regen),
+		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[16813] = {
 		cast_time = 0,
@@ -1477,7 +1477,7 @@ sc.spells = {
 		base_id = 33943,
 		gcd = 1.5000001,
 		train = 81000,
-		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.resource_regen),
+		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[1735] = {
 		direct = {
@@ -5215,7 +5215,7 @@ sc.spells = {
 		base_id = 783,
 		gcd = 1.5000001,
 		train = 6000,
-		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.resource_regen),
+		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[1822] = {
 		direct = {
@@ -5491,7 +5491,7 @@ sc.spells = {
 		base_id = 40120,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.resource_regen),
+		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[9846] = {
 		periodic = {
@@ -5900,7 +5900,7 @@ sc.spells = {
 		base_id = 1066,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.resource_regen),
+		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[27013] = {
 		periodic = {
@@ -6212,9 +6212,6 @@ sc.talent_effects = {
 	[33599] = {
 			{"raw", "mp5_from_int_mod", 0.07, nil, 0, 0},
 	},
-	[16835] = {
-			{"ability", "cost_mod", -0.29999998, {783,33943,768,1066,40120,}, 0, 0},
-	},
 	[16818] = {
 			{"ability", "cast_mod_flat", -0.5, {5176,2912,}, 0, 0},
 	},
@@ -6478,9 +6475,6 @@ sc.talent_effects = {
 	[33866] = {
 			{"by_school", "crit_mod", 0.04, {1,}, 0, 0},
 	},
-	[16834] = {
-			{"ability", "cost_mod", -0.19999999, {783,33943,768,1066,40120,}, 0, 0},
-	},
 	[16897] = {
 			{"ability", "effect_mod", 0.04, {8921,5176,2912,}, 0, 0},
 			{"ability", "effect_mod_ot", 0.04, {8921,}, 0, 1},
@@ -6521,9 +6515,6 @@ sc.talent_effects = {
 	},
 	[17122] = {
 			{"ability", "threat", -0.19999999, {33763,339,740,5185,8921,5176,29166,770,5570,774,16914,2912,18562,8936,}, 0, 0},
-	},
-	[16833] = {
-			{"ability", "cost_mod", -0.099999994, {783,33943,768,1066,40120,}, 0, 0},
 	},
 	[17104] = {
 			{"ability", "effect_mod", 0.02, {33763,740,5185,8936,}, 0, 0},
@@ -6846,9 +6837,6 @@ sc.class_buffs = {
 	[21849] = {
 			{"by_school", "res_flat", 240, {1,}, 0, 0},
 	},
-	[23724] = {
-			{"ability", "cost_mod_flat", -550, {783,33943,768,1066,40120,}, 0, 0},
-	},
 	[26991] = {
 			{"by_school", "res_flat", 340, {1,}, 0, 0},
 	},
@@ -6866,9 +6854,6 @@ sc.class_buffs = {
 	},
 	[768] = {
 			{"applies_aura", "shapeshift_passives", 0, {3025,}, 16, 0},
-	},
-	[40389] = {
-			{"ability", "cost_mod_flat", -115, {33943,40120,}, 0, 0},
 	},
 	[24932] = {
 			{"raw", "phys_crit", 0.049999997, nil, 32, 0},
@@ -9025,7 +9010,6 @@ local items = {
 	[33671] = {44835,},
 	[32387] = {39926,},
 	[34998] = {44835,},
-	[31334] = {38314,},
 	[27886] = {34246,},
 	[33945] = {43840,},
 	[8345] = {17768,},
@@ -9077,9 +9061,6 @@ local item_effects = {
 	},
 	[37737] = {
 			{"ability", "cost_mod_flat", -65, {8936,}, 0, 0},
-	},
-	[38314] = {
-			{"ability", "cost_mod_flat", -200, {783,33943,768,1066,40120,}, 0, 0},
 	},
 	[37760] = {
 			{"ability", "effect_mod_flat", 25, {5176,}, 0, 0},
@@ -9145,9 +9126,6 @@ local set_effects = {
 	},
 	[28743] = {
 			{"ability", "cost_mod", -0.03, {740,5185,774,8936,}, 0, 0},
-	},
-	[37287] = {
-			{"ability", "cost_mod", -0.25, {783,33943,768,1066,40120,}, 0, 0},
 	},
 	[38415] = {
 			{"ability", "crit", 0.049999997, {2912,}, 0, 0},
