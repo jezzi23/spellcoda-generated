@@ -3311,7 +3311,7 @@ sc.spells = {
 		lvl_outdated = 70,
 		base_id = 3561,
 		gcd = 1.5000001,
-		train = 1800,
+		train = 2000,
 		anyschool = schools.arcane,
 		flags = bit.bor(0),
 	},
