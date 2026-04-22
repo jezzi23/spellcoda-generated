@@ -222,7 +222,7 @@ sc.player_buffs = {
 			{"by_school", "sp_dmg_flat", 23, {1,2,3,4,5,6,7,}, 2, 0},
 	},
 	[34551] = {
-			{"applies_aura", "shapeshift_passives", 0, {}, 16, 0},
+			{"applies_aura", "shapeshift_passives", 0, {5420,}, 16, 0},
 	},
 	[16277] = {
 			{"raw", "melee_haste", 0.14999999, nil, 97, 0},
@@ -5744,7 +5744,7 @@ sc.player_buffs = {
 			{"raw", "melee_haste", 1, nil, 33, 0},
 	},
 	[33891] = {
-			{"applies_aura", "shapeshift_passives", 0, {}, 16, 0},
+			{"applies_aura", "shapeshift_passives", 0, {5420,}, 16, 0},
 	},
 	[2048] = {
 			{"raw", "ap_flat", 305, nil, 2, 0},

@@ -6873,7 +6873,7 @@ sc.class_buffs = {
 			{"by_school", "res_flat", 285, {1,}, 0, 0},
 	},
 	[33891] = {
-			{"applies_aura", "shapeshift_passives", 0, {}, 16, 0},
+			{"applies_aura", "shapeshift_passives", 0, {5420,}, 16, 0},
 	},
 	[32717] = {
 			{"raw", "melee_haste", -0.66999996, nil, 33, 1},
@@ -9172,6 +9172,9 @@ sc.shapeshift_passives = {
 	[24905] = {
 			{"raw", "base_res_phys_mod", 4, nil, 32, 0},
 			{"raw", "ap_flat", 60, nil, 2, 1},
+	},
+	[5420] = {
+			{"ability", "cost_mod", -0.19999999, {33763,740,29166,774,18562,8936,}, 0, 2},
 	},
 	[21178] = {
 			{"by_school", "threat", 0.29999998, {1,2,3,4,5,6,7,}, 0, 0},
