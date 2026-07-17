@@ -1,8 +1,8 @@
 -- THIS FILE IS GENERATED
 local _, sc = ...;
-sc.addon_build_id = 2534;
+sc.addon_build_id = 2563;
 sc.client_name_src = "wow_anniversary";
-sc.client_version_src = "2.5.6.68575";
+sc.client_version_src = "2.5.6.68749";
 _, sc.class = UnitClass("player");
 _, _, sc.race = UnitRace("player");
 sc.faction = UnitFactionGroup("player");
