@@ -264,6 +264,7 @@ for _, v in ipairs({
   "IS ON",
   "Item comparison in tooltips",
   "Item ID viewer",
+  "Item missing from SpellCoda dataset. An update may be needed",
   "Item planner",
   "Jump amplifier",
   "Label",
