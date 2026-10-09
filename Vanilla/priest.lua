@@ -7,8 +7,28 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 558096;
 sc.equippable_armors_mask = 3;
+sc.lookups = {
+	divine_aegis = 431622,
+	t2_priest_healer_6p = 467586,
+};
+sc.dummies = {
+	[431622] = {{30, 30, 0},},
+	[467586] = {{25, 25, 0},},
+};
 sc.spells = {
 	[425271] = {
+		direct = {
+			min = 49,
+			max = 49,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 49,
 			max = 49,
@@ -77,6 +97,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
 	},
 	[425270] = {
+		direct = {
+			min = 35,
+			max = 35,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 35,
 			max = 35,
@@ -994,6 +1026,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant, spell_flags.eval),
 	},
 	[425274] = {
+		direct = {
+			min = 102,
+			max = 102,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 102,
 			max = 102,
@@ -1045,6 +1089,19 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.cd, spell_flags.eval),
 	},
 	[402174] = {
+		direct = {
+			base_min = 9.456667,
+			base_max = 9.456667,
+			min = 1.28,
+			max = 1.28,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.285,
+			per_lvl = 0.635108,
+			per_lvl_sq = 0.039063,
+			jump_amp = 1,
+			flags = bit.bor(0),
+		},
 		periodic = {
 			base_min = 9.456667,
 			base_max = 9.456667,
@@ -1072,6 +1129,20 @@ sc.spells = {
 		train = 0,
 		flags = bit.bor(0, spell_flags.channel, spell_flags.cd, spell_flags.base_mana_cost, spell_flags.eval, spell_flags.ot_haste_improved),
 		healing_version = {
+		direct = {
+			base_min = 38.258377,
+			base_max = 38.258377,
+			min = 0.84999996,
+			max = 0.84999996,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.285,
+			per_lvl = 0.904195,
+			per_lvl_sq = 0.161311,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0),
+		},
 		periodic = {
 			base_min = 38.258377,
 			base_max = 38.258377,
@@ -1267,6 +1338,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant, spell_flags.talent),
 	},
 	[425276] = {
+		direct = {
+			min = 162,
+			max = 162,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 162,
 			max = 162,
@@ -2597,6 +2680,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},
 	[425269] = {
+		direct = {
+			min = 20,
+			max = 20,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.17825,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 20,
 			max = 20,
@@ -2679,6 +2774,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant, spell_flags.talent),
 	},
 	[425277] = {
+		direct = {
+			min = 194,
+			max = 194,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 194,
 			max = 194,
@@ -2758,6 +2865,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.heal, spell_flags.eval),
 	},
 	[425268] = {
+		direct = {
+			min = 9,
+			max = 9,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.1265,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 9,
 			max = 9,
@@ -3586,6 +3705,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant, spell_flags.eval),
 	},
 	[425275] = {
+		direct = {
+			min = 130,
+			max = 130,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 130,
 			max = 130,
@@ -4121,6 +4252,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant),
 	},
 	[425272] = {
+		direct = {
+			min = 63,
+			max = 63,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 63,
 			max = 63,
@@ -5171,6 +5314,18 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.cd, spell_flags.eval),
 	},
 	[425273] = {
+		direct = {
+			min = 80,
+			max = 80,
+			var = 0,
+			school1 = schools.holy,
+			coef = 0.23,
+			per_lvl = 0,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			threat_mod = -0.75,
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
+		},
 		periodic = {
 			min = 80,
 			max = 80,

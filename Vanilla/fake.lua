@@ -7,6 +7,10 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 0;
 sc.equippable_armors_mask = 0;
+sc.lookups = {
+};
+sc.dummies = {
+};
 sc.spells = {
 };
 sc.spids = {

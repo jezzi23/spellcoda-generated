@@ -7,6 +7,15 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 42035;
 sc.equippable_armors_mask = 79;
+sc.lookups = {
+};
+sc.dummies = {
+	[30675] = {{4, 4, 0},},
+	[30678] = {{8, 8, 0},},
+	[30679] = {{12, 12, 0},},
+	[30680] = {{16, 16, 0},},
+	[30681] = {{20, 20, 0},},
+};
 sc.spells = {
 	[8177] = {
 		cast_time = 0,

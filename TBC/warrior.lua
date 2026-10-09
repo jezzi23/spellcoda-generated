@@ -7,6 +7,10 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 370175;
 sc.equippable_armors_mask = 95;
+sc.lookups = {
+};
+sc.dummies = {
+};
 sc.spells = {
 	[23925] = {
 		direct = {
@@ -214,8 +218,6 @@ sc.spells = {
 			dur = 15.000001,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -270,8 +272,6 @@ sc.spells = {
 			dur = 21.000002,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -612,8 +612,6 @@ sc.spells = {
 			dur = 12.000001,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -668,8 +666,6 @@ sc.spells = {
 			dur = 21.000002,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -2339,8 +2335,6 @@ sc.spells = {
 			dur = 21.000002,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -2585,8 +2579,6 @@ sc.spells = {
 			dur = 21.000002,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -2928,8 +2920,6 @@ sc.spells = {
 			dur = 9,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -3295,8 +3285,6 @@ sc.spells = {
 			dur = 18,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.071428575,
-			coef_ap_max = 0.071428575,
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
@@ -3932,7 +3920,7 @@ sc.talent_effects = {
 			{"by_attr", "stat_mod", 0.06, {1,}, 32, 1},
 	},
 	[12857] = {
-			{"aura_pts", -1, 0.099999994, {27578,}, 0, 0},
+			{"aura_pts", -1, 0.099999994, {27578,469,}, 0, 0},
 			{"ability", "base_mod", 0.099999994, {6673,}, 0, 0},
 			{"ability", "base_mod_ot", 0.099999994, {6673,}, 0, 0},
 	},
@@ -3940,7 +3928,7 @@ sc.talent_effects = {
 			{"ability", "cost_mod_flat", -20, {78,}, 0, 0},
 	},
 	[12858] = {
-			{"aura_pts", -1, 0.14999999, {27578,}, 0, 0},
+			{"aura_pts", -1, 0.14999999, {27578,469,}, 0, 0},
 			{"ability", "base_mod", 0.14999999, {6673,}, 0, 0},
 			{"ability", "base_mod_ot", 0.14999999, {6673,}, 0, 0},
 	},
@@ -4073,7 +4061,7 @@ sc.talent_effects = {
 			{"ability", "cast_mod_flat", -1, {1464,}, 0, 0},
 	},
 	[12860] = {
-			{"aura_pts", -1, 0.19999999, {27578,}, 0, 0},
+			{"aura_pts", -1, 0.19999999, {27578,469,}, 0, 0},
 			{"ability", "base_mod", 0.19999999, {6673,}, 0, 0},
 			{"ability", "base_mod_ot", 0.19999999, {6673,}, 0, 0},
 	},
@@ -4128,7 +4116,7 @@ sc.talent_effects = {
 			{"wpn_subclass", "phys_mod", 0.03, {354}, 9, 0},
 	},
 	[12318] = {
-			{"aura_pts", -1, 0.049999997, {27578,}, 0, 0},
+			{"aura_pts", -1, 0.049999997, {27578,469,}, 0, 0},
 			{"ability", "base_mod", 0.049999997, {6673,}, 0, 0},
 			{"ability", "base_mod_ot", 0.049999997, {6673,}, 0, 0},
 	},
@@ -4150,7 +4138,7 @@ sc.talent_effects = {
 			{"wpn_subclass", "phys_crit", 0.049999997, {173555}, 40, 0},
 	},
 	[12861] = {
-			{"aura_pts", -1, 0.25, {27578,}, 0, 0},
+			{"aura_pts", -1, 0.25, {27578,469,}, 0, 0},
 			{"ability", "base_mod", 0.25, {6673,}, 0, 0},
 			{"ability", "base_mod_ot", 0.25, {6673,}, 0, 0},
 	},
@@ -4390,6 +4378,9 @@ sc.class_buffs = {
 	[13847] = {
 			{"raw", "phys_crit", 1, nil, 32, 0},
 			{"raw", "res_phys_mod", -0.35, nil, 32, 1},
+	},
+	[469] = {
+			{"raw", "hp_flat", 1080, nil, 2, 0},
 	},
 	[29061] = {
 			{"raw", "player_vuln_phys", -0.75, nil, 1, 0},
@@ -6668,6 +6659,9 @@ local set_effects = {
 	[26110] = {
 			{"ability", "base_mod", 0.5, {26090,6343,}, 0, 0},
 			{"ability", "base_mod_ot", 0.5, {26090,6343,}, 0, 0},
+	},
+	[38408] = {
+			{"aura_pts_flat", -1, 170, {469,}, 0, 0},
 	},
 	[28842] = {
 			{"ability", "hit", 0.049999997, {6572,78,20243,23922,7386,}, 0, 0},

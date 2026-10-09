@@ -7,6 +7,13 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 558208;
 sc.equippable_armors_mask = 3;
+sc.lookups = {
+	fingers_of_frost = 400669,
+	t2_mage_damage_6p = 467399,
+};
+sc.dummies = {
+	[467399] = {{100, 100, 0},},
+};
 sc.spells = {
 	[10201] = {
 		direct = {

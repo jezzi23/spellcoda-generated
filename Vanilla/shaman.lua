@@ -7,6 +7,16 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 42035;
 sc.equippable_armors_mask = 79;
+sc.lookups = {
+	water_shield = 408510,
+	lightning_overload = 408438,
+	ancestral_awakening = 425858,
+};
+sc.dummies = {
+	[408511] = {{4, 4, 0},},
+	[408438] = {{30, 30, 0},},
+	[425858] = {{30, 30, 0},},
+};
 sc.spells = {
 	[8177] = {
 		cast_time = 0,
@@ -373,15 +383,15 @@ sc.spells = {
 	},
 	[408343] = {
 		direct = {
-			min = 5,
-			max = 5,
+			min = 184,
+			max = 208,
 			var = 0,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 2.2,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0),
+			flags = bit.bor(0, comp_flags.unbounded_aoe),
 		},
 		cast_time = 0,
 		cost = 280,
@@ -393,7 +403,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[421] = {
 		direct = {
@@ -422,22 +432,9 @@ sc.spells = {
 	},
 	[408345] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
-			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
-			per_lvl_sq = 0,
-			jump_amp = 1,
-			flags = bit.bor(0),
-		},
-		periodic = {
 			min = 396,
 			max = 442,
 			var = 0,
-			tick_time = 4,
-			dur = 0,
 			school1 = schools.fire,
 			coef = 0.143,
 			per_lvl = 3.4,
@@ -576,15 +573,15 @@ sc.spells = {
 	},
 	[408342] = {
 		direct = {
-			min = 5,
-			max = 5,
+			min = 102,
+			max = 116,
 			var = 0,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 1.6,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0),
+			flags = bit.bor(0, comp_flags.unbounded_aoe),
 		},
 		cast_time = 0,
 		cost = 170,
@@ -596,19 +593,19 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[408341] = {
 		direct = {
-			min = 5,
-			max = 5,
+			min = 48,
+			max = 56,
 			var = 0,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.1,
+			per_lvl = 1.1,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0),
+			flags = bit.bor(0, comp_flags.unbounded_aoe),
 		},
 		cast_time = 0,
 		cost = 95,
@@ -620,7 +617,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10447] = {
 		direct = {
@@ -2188,6 +2185,19 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.instant),
 	},
 	[11315] = {
+		periodic = {
+			min = 396,
+			max = 442,
+			var = 0,
+			tick_time = 4,
+			dur = 5,
+			school1 = schools.fire,
+			coef = 0.143,
+			per_lvl = 3.4,
+			per_lvl_sq = 0,
+			jump_amp = 1,
+			flags = bit.bor(0, comp_flags.unbounded_aoe),
+		},
 		cast_time = 0,
 		cost = 520,
 		power_type = powers.mana,
@@ -2198,8 +2208,7 @@ sc.spells = {
 		base_id = 1535,
 		gcd = 1.5000001,
 		train = 27000,
-		anyschool = schools.fire,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[913] = {
 		direct = {
@@ -2277,15 +2286,15 @@ sc.spells = {
 	},
 	[408344] = {
 		direct = {
-			min = 5,
-			max = 5,
+			min = 281,
+			max = 317,
 			var = 0,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 2.8,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0),
+			flags = bit.bor(0, comp_flags.unbounded_aoe),
 		},
 		cast_time = 0,
 		cost = 395,
@@ -2297,7 +2306,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[6041] = {
 		direct = {
@@ -4499,7 +4508,7 @@ sc.talent_effects = {
 			{"wpn_subclass", "phys_crit", 0.04, {173555}, 40, 0},
 	},
 	[16544] = {
-			{"ability", "extra_tick_time_flat", -2, {1535,408341,}, 0, 0},
+			{"ability", "extra_tick_time_flat", -2, {1535,}, 0, 0},
 			{"ability", "extra_dur_flat", -2, {1535,}, 0, 1},
 			{"ability", "threat", -0.5, {8190,}, 0, 2},
 	},
@@ -4600,7 +4609,7 @@ sc.talent_effects = {
 			{"raw", "base_res_phys_mod", 0.02, nil, 32, 0},
 	},
 	[16086] = {
-			{"ability", "extra_tick_time_flat", -1, {1535,408341,}, 0, 0},
+			{"ability", "extra_tick_time_flat", -1, {1535,}, 0, 0},
 			{"ability", "extra_dur_flat", -1, {1535,}, 0, 1},
 			{"ability", "threat", -0.25, {8190,}, 0, 2},
 	},

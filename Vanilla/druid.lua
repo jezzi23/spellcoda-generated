@@ -7,6 +7,16 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 42032;
 sc.equippable_armors_mask = 7;
+sc.lookups = {
+	living_seed = 414677,
+	taq_druid_feral_4p = 1213174,
+	taq_druid_restoration_4p = 1213160,
+};
+sc.dummies = {
+	[414677] = {{50, 50, 0},},
+	[1213174] = {{30, 30, 0},},
+	[1213160] = {{50, 50, 0},},
+};
 sc.spells = {
 	[408247] = {
 		direct = {
@@ -3661,8 +3671,8 @@ sc.spells = {
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.0661,
-			coef_ap_max = 0.0661,
+			coef_ap_min = 0.104,
+			coef_ap_max = 0.104,
 			per_lvl = 0.616405,
 			per_lvl_sq = 0.028608,
 			jump_amp = 1,

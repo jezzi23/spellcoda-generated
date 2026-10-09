@@ -7,6 +7,18 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 42032;
 sc.equippable_armors_mask = 7;
+sc.lookups = {
+	living_seed = 414677,
+	taq_druid_feral_4p = 1213174,
+	taq_druid_restoration_4p = 1213160,
+	heart_of_the_wild = 17003,
+};
+sc.dummies = {
+	[414677] = {{50, 50, 0},},
+	[1213174] = {{30, 30, 0},},
+	[1213160] = {{50, 50, 0},},
+	[17003] = {{10, 10, 0, 85337},{20, 20, 1, 112809},{10, 10, 2, 112808},},
+};
 sc.spells = {
 	[408247] = {
 		direct = {
@@ -37,12 +49,12 @@ sc.spells = {
 	},
 	[5179] = {
 		direct = {
-			min = 35,
-			max = 41,
+			min = 34,
+			max = 40,
 			var = 0.14705883,
 			school1 = schools.nature,
 			coef = 0.571,
-			per_lvl = 0.9,
+			per_lvl = 0.6,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -410,7 +422,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 407995,
 		gcd = 1.5000001,
-		train = 0,
+		train = 28000,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent, spell_flags.refund_on_miss),
 	},
 	[8992] = {
@@ -929,7 +941,7 @@ sc.spells = {
 		base_id = 22568,
 		gcd = 1,
 		train = 14000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[414689] = {
 		direct = {
@@ -1082,7 +1094,7 @@ sc.spells = {
 	},
 	[9898] = {
 		direct = {
-			threat_mod_flat = 0,
+			threat_mod_flat = 42,
 			school1 = schools.physical,
 			flags = bit.bor(0, comp_flags.unbounded_aoe, comp_flags.no_attack),
 		},
@@ -1136,7 +1148,7 @@ sc.spells = {
 		lvl_outdated = 47,
 		base_id = 407995,
 		gcd = 1.5000001,
-		train = 0,
+		train = 8000,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent, spell_flags.refund_on_miss),
 	},
 	[2090] = {
@@ -1364,7 +1376,7 @@ sc.spells = {
 	},
 	[9747] = {
 		direct = {
-			threat_mod_flat = 0,
+			threat_mod_flat = 34,
 			school1 = schools.physical,
 			flags = bit.bor(0, comp_flags.unbounded_aoe, comp_flags.no_attack),
 		},
@@ -1555,11 +1567,11 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 5000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[1735] = {
 		direct = {
-			threat_mod_flat = 0,
+			threat_mod_flat = 16,
 			school1 = schools.physical,
 			flags = bit.bor(0, comp_flags.unbounded_aoe, comp_flags.no_attack),
 		},
@@ -1944,7 +1956,7 @@ sc.spells = {
 			var = 0.16666667,
 			school1 = schools.nature,
 			coef = 0.571,
-			per_lvl = 0.7,
+			per_lvl = 0.5,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -2110,7 +2122,7 @@ sc.spells = {
 		base_id = 22568,
 		gcd = 1,
 		train = 30000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[9833] = {
 		direct = {
@@ -2235,7 +2247,7 @@ sc.spells = {
 			var = 0.15384616,
 			school1 = schools.nature,
 			coef = 0.429,
-			per_lvl = 0.4,
+			per_lvl = 0.2,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -2407,7 +2419,7 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 11000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[417157] = {
 		direct = {
@@ -2488,7 +2500,7 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 2000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[8936] = {
 		direct = {
@@ -2935,7 +2947,7 @@ sc.spells = {
 		base_id = 22568,
 		gcd = 1,
 		train = 0,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[407988] = {
 		cast_time = 0,
@@ -2949,7 +2961,7 @@ sc.spells = {
 		gcd = 1,
 		train = 0,
 		anyschool = schools.physical,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.finishing_move_dur, spell_flags.refund_on_miss),
 	},
 	[8918] = {
 		periodic = {
@@ -3185,7 +3197,7 @@ sc.spells = {
 	},
 	[99] = {
 		direct = {
-			threat_mod_flat = 0,
+			threat_mod_flat = 8,
 			school1 = schools.physical,
 			flags = bit.bor(0, comp_flags.unbounded_aoe, comp_flags.no_attack),
 		},
@@ -3303,7 +3315,7 @@ sc.spells = {
 		base_id = 22568,
 		gcd = 1,
 		train = 22000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[5221] = {
 		direct = {
@@ -3551,8 +3563,8 @@ sc.spells = {
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
-			coef_ap_min = 0.0661,
-			coef_ap_max = 0.0661,
+			coef_ap_min = 0.104,
+			coef_ap_max = 0.104,
 			per_lvl = 0.616405,
 			per_lvl_sq = 0.028608,
 			jump_amp = 1,
@@ -3857,7 +3869,7 @@ sc.spells = {
 		base_id = 22568,
 		gcd = 1,
 		train = 8000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[9894] = {
 		periodic = {
@@ -3884,7 +3896,7 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 26000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[9754] = {
 		direct = {
@@ -4177,12 +4189,12 @@ sc.spells = {
 	},
 	[5177] = {
 		direct = {
-			min = 21,
-			max = 25,
+			min = 19,
+			max = 23,
 			var = 0.14814815,
 			school1 = schools.nature,
 			coef = 0.486,
-			per_lvl = 0.6,
+			per_lvl = 0.3,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -4478,7 +4490,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 407995,
 		gcd = 1.5000001,
-		train = 0,
+		train = 17000,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent, spell_flags.refund_on_miss),
 	},
 	[5188] = {
@@ -4969,7 +4981,7 @@ sc.spells = {
 			var = 0.12962963,
 			school1 = schools.nature,
 			coef = 0.571,
-			per_lvl = 0.9,
+			per_lvl = 0.7,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -5063,7 +5075,7 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 18000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[1237948] = {
 		cast_time = 10,
@@ -5447,7 +5459,7 @@ sc.spells = {
 		base_id = 1079,
 		gcd = 1,
 		train = 34000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.finishing_move_dmg, spell_flags.refund_on_miss),
 	},
 	[408120] = {
 		periodic = {
@@ -5907,7 +5919,7 @@ sc.spells = {
 	},
 	[9490] = {
 		direct = {
-			threat_mod_flat = 0,
+			threat_mod_flat = 26,
 			school1 = schools.physical,
 			flags = bit.bor(0, comp_flags.unbounded_aoe, comp_flags.no_attack),
 		},
@@ -6304,7 +6316,7 @@ sc.talent_effects = {
 			{"ability", "cost_mod", -0.5, {5176,}, 0, 1, 0.01, 108163},
 	},
 	[17003] = {
-			{"by_attr", "stat_mod", 0.099999994, {1,}, 32, 0, 0.01, 85337},
+			{"by_attr", "stat_mod", 0.099999994, {4,}, 32, 0, 0.01, 85337},
 	},
 	[16845] = {
 			{"ability", "cost_mod", -0.25, {339,8921,5176,5570,16914,2912,}, 0, 0, 0.01, 85328},
@@ -6340,6 +6352,14 @@ sc.talent_effects = {
 	[17118] = {
 			{"by_school", "threat", -0.29999998, {4,7,}, 0, 0, 0.01, 85365},
 	},
+	[16942] = {
+			{"raw", "phys_crit", 0.02, nil, 32, 0, 0.01, 85348},
+			{"by_school", "crit", 0.02, {1,2,3,4,5,6,7,}, 32, 0, 0.01, 85348},
+	},
+	[1223082] = {
+			{"raw", "phys_crit", 0.01, nil, 32, 0, 0.01, 85326},
+			{"by_school", "crit", 0.01, {1,2,3,4,5,6,7,}, 32, 0, 0.01, 85326},
+	},
 	[17074] = {
 			{"ability", "crit", 0.099999994, {436937,8936,}, 0, 0, 0.01, 85410},
 	},
@@ -6371,6 +6391,7 @@ sc.talent_effects = {
 	},
 	[1223242] = {
 			{"ability", "crit_mod", 0.19999999, {414644,5221,22568,1822,6785,6807,1082,9005,407995,779,1079,}, 0, 0, 0.01, 85354},
+			{"by_attr", "hp_of_stat_pct", 0.25, {4,}, 32, 1, 0.01, 125352},
 	},
 	[17104] = {
 			{"ability", "effect_mod", 0.02, {740,5185,436937,18562,8936,}, 0, 0, 0.01, 85390},
@@ -6383,7 +6404,7 @@ sc.talent_effects = {
 			{"ability", "cost_mod", -0.02, {740,5185,}, 0, 0, 0.01, 85404},
 	},
 	[1309631] = {
-			{"by_attr", "stat_mod", 0.14999999, {1,}, 32, 0, 0.01, 85407},
+			{"by_attr", "stat_mod", 0.14999999, {5,}, 32, 0, 0.01, 85407},
 	},
 	[1223081] = {
 			{"ability", "effect_mod_ot", 0.01, {339,414644,8921,1822,436937,5570,408120,774,417057,9005,1079,8936,}, 0, 0, 0.01, 85325},
@@ -6529,7 +6550,7 @@ sc.talent_idx = {
 	berserk = 220,
 	natures_splendor = 108,
 	improved_tranquility = 314,
-	predatory_instincts = 217,
+	natural_instinct = 217,
 	savage_fury = 208,
 	tranquil_spirit = 309,
 	natures_majesty = 105,
@@ -6555,7 +6576,6 @@ sc.talent_idx = {
 };
 sc.class_buffs = {
 	[9884] = {
-			{"by_school", "res_flat", 324, {1,}, 0, 0},
 			{"by_school", "res_flat", 20, {2,}, 0, 2},
 			{"by_school", "res_flat", 20, {3,}, 0, 3},
 			{"by_school", "res_flat", 20, {4,}, 0, 4},
@@ -6565,9 +6585,6 @@ sc.class_buffs = {
 	},
 	[1213190] = {
 			{"ability", "effect_mod", 0.099999994, {411128,407995,779,}, 64, 0},
-	},
-	[5232] = {
-			{"by_school", "res_flat", 88, {1,}, 0, 0},
 	},
 	[9634] = {
 			{"applies_aura", "shapeshift_passives", 0, {9635,21178,}, 16, 0},
@@ -6582,7 +6599,10 @@ sc.class_buffs = {
 			{"by_school", "res_flat", 285, {1,}, 0, 0},
 	},
 	[467467] = {
-			{"aura_pts", 0, 1, {439745,}, 0, 1},
+			{"aura_pts", 0, 1, {24907,24932,439745,}, 0, 1},
+	},
+	[1278968] = {
+			{"raw", "melee_haste", -0.19999999, nil, 33, 1},
 	},
 	[1262307] = {
 			{"ability", "cost_mod", -1, {408247,408124,5185,29166,436937,408120,774,417057,8936,}, 0, 0},
@@ -6603,7 +6623,6 @@ sc.class_buffs = {
 			{"by_school", "res_flat", 700, {1,}, 0, 0},
 	},
 	[8907] = {
-			{"by_school", "res_flat", 263, {1,}, 0, 0},
 			{"by_school", "res_flat", 14, {2,}, 0, 2},
 			{"by_school", "res_flat", 14, {3,}, 0, 3},
 			{"by_school", "res_flat", 14, {4,}, 0, 4},
@@ -6618,7 +6637,6 @@ sc.class_buffs = {
 			{"raw", "phys_hit", -0.02, nil, 0, 1},
 	},
 	[1310503] = {
-			{"by_school", "res_flat", 385, {1,}, 0, 0},
 			{"by_attr", "stat_flat", 16, {1,2,3,4,5,}, 2, 1},
 			{"by_school", "res_flat", 27, {2,}, 0, 2},
 			{"by_school", "res_flat", 27, {3,}, 0, 3},
@@ -6626,9 +6644,6 @@ sc.class_buffs = {
 			{"by_school", "res_flat", 27, {5,}, 0, 5},
 			{"by_school", "res_flat", 27, {6,}, 0, 6},
 			{"by_school", "res_flat", 27, {7,}, 0, 7},
-	},
-	[770] = {
-			{"by_school", "res_flat", -175, {1,}, 0, 0},
 	},
 	[24858] = {
 			{"applies_aura", "shapeshift_passives", 0, {24905,443359,}, 16, 0},
@@ -6643,11 +6658,18 @@ sc.class_buffs = {
 			{"ability", "cast_mod", -0.39999998, {5185,}, 0, 0},
 			{"ability", "cost_mod", -0.049999997, {740,5185,436937,774,417057,8936,}, 0, 1},
 	},
+	[24907] = {
+			{"raw", "phys_crit", 0.03, nil, 32, 0},
+			{"by_school", "crit", 0.03, {1,2,3,4,5,6,7,}, 32, 0},
+	},
 	[408261] = {
 			{"raw", "regen_while_casting", 0.5, nil, 0, 0},
 	},
 	[17116] = {
 			{"ability", "cast_mod", -1, {339,408247,5185,5176,436937,417157,8936,}, 64, 0},
+	},
+	[5217] = {
+			{"raw", "phys_mod", 0.14999999, nil, 1, 0},
 	},
 	[19634] = {
 			{"raw", "mp5_flat", 83.33333, nil, 0, 0},
@@ -6656,13 +6678,15 @@ sc.class_buffs = {
 			{"raw", "phys_hit", -0.02, nil, 0, 1},
 	},
 	[5234] = {
-			{"by_school", "res_flat", 203, {1,}, 0, 0},
 			{"by_school", "res_flat", 7, {2,}, 0, 2},
 			{"by_school", "res_flat", 7, {3,}, 0, 3},
 			{"by_school", "res_flat", 7, {4,}, 0, 4},
 			{"by_school", "res_flat", 7, {5,}, 0, 5},
 			{"by_school", "res_flat", 7, {6,}, 0, 6},
 			{"by_school", "res_flat", 7, {7,}, 0, 7},
+	},
+	[1278965] = {
+			{"raw", "melee_haste", -0.19999999, nil, 33, 1},
 	},
 	[414800] = {
 			{"ability", "cast_mod", -1, {408247,5185,}, 64, 0},
@@ -6676,14 +6700,13 @@ sc.class_buffs = {
 	[28790] = {
 			{"by_school", "res_flat", 700, {1,}, 0, 0},
 	},
-	[6756] = {
-			{"by_school", "res_flat", 142, {1,}, 0, 0},
+	[21793] = {
+			{"raw", "melee_haste", -3, nil, 33, 2},
 	},
 	[1220546] = {
 			{"by_school", "res_flat", 700, {1,}, 0, 0},
 	},
 	[9885] = {
-			{"by_school", "res_flat", 385, {1,}, 0, 0},
 			{"by_school", "res_flat", 27, {2,}, 0, 2},
 			{"by_school", "res_flat", 27, {3,}, 0, 3},
 			{"by_school", "res_flat", 27, {4,}, 0, 4},
@@ -6694,14 +6717,10 @@ sc.class_buffs = {
 	[467204] = {
 			{"ability", "cast_mod_flat", -0.5, {408247,5185,436937,8936,}, 64, 0},
 	},
-	[778] = {
-			{"by_school", "res_flat", -285, {1,}, 0, 0},
-	},
 	[460673] = {
 			{"ability", "cast_mod_flat", 1, {339,5185,5176,436937,2912,8936,}, 0, 2},
 	},
 	[21849] = {
-			{"by_school", "res_flat", 324, {1,}, 0, 0},
 			{"by_attr", "stat_flat", 14, {1,2,3,4,5,}, 2, 1},
 			{"by_school", "res_flat", 20, {2,}, 0, 2},
 			{"by_school", "res_flat", 20, {3,}, 0, 3},
@@ -6713,6 +6732,12 @@ sc.class_buffs = {
 	[1291335] = {
 			{"by_attr", "stat_flat", 16, {1,2,3,4,5,}, 2, 1},
 	},
+	[1226127] = {
+			{"raw", "melee_haste", 0.04, nil, 33, 0},
+	},
+	[1278759] = {
+			{"raw", "melee_haste", -0.19999999, nil, 33, 1},
+	},
 	[24975] = {
 			{"raw", "phys_hit", -0.02, nil, 0, 1},
 	},
@@ -6722,8 +6747,9 @@ sc.class_buffs = {
 	[768] = {
 			{"applies_aura", "shapeshift_passives", 0, {3025,}, 16, 0},
 	},
-	[1126] = {
-			{"by_school", "res_flat", 34, {1,}, 0, 0},
+	[24932] = {
+			{"raw", "phys_crit", 0.03, nil, 32, 0},
+			{"by_school", "crit", 0.03, {1,2,3,4,5,6,7,}, 32, 0},
 	},
 	[22812] = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 1, 1},
@@ -6736,7 +6762,6 @@ sc.class_buffs = {
 			{"raw", "phys_hit", -0.02, nil, 0, 1},
 	},
 	[21850] = {
-			{"by_school", "res_flat", 385, {1,}, 0, 0},
 			{"by_attr", "stat_flat", 16, {1,2,3,4,5,}, 2, 1},
 			{"by_school", "res_flat", 27, {2,}, 0, 2},
 			{"by_school", "res_flat", 27, {3,}, 0, 3},
@@ -6778,25 +6803,21 @@ sc.class_buffs = {
 	[27555] = {
 			{"raw", "res_phys_mod", -0.75, nil, 32, 1},
 	},
-	[9749] = {
-			{"by_school", "res_flat", -395, {1,}, 0, 0},
-	},
 	[428713] = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 1, 1},
 	},
 	[456195] = {
 			{"raw", "regen_while_casting", 1, nil, 0, 0},
 	},
-	[9907] = {
-			{"by_school", "res_flat", -505, {1,}, 0, 0},
-	},
 	[24977] = {
 			{"raw", "phys_hit", -0.02, nil, 0, 1},
+	},
+	[27530] = {
+			{"raw", "melee_haste", -0.66999996, nil, 33, 1},
 	},
 };
 local class_hostile_buffs = {
 	[1310503] = {
-			{"by_school", "target_res_flat", 385, {1,}, 0, 0},
 			{"by_school", "target_res_flat", 27, {2,}, 0, 2},
 			{"by_school", "target_res_flat", 27, {3,}, 0, 3},
 			{"by_school", "target_res_flat", 27, {4,}, 0, 4},
@@ -6804,18 +6825,11 @@ local class_hostile_buffs = {
 			{"by_school", "target_res_flat", 27, {6,}, 0, 6},
 			{"by_school", "target_res_flat", 27, {7,}, 0, 7},
 	},
-	[770] = {
-			{"by_school", "target_res_flat", -175, {1,}, 0, 0},
-	},
 	[437132] = {
 			{"by_school", "vuln_mod", 0.19999999, {4,}, 1, 0},
 			{"by_school", "vuln_mod", 0.19999999, {7,}, 1, 1},
 	},
-	[778] = {
-			{"by_school", "target_res_flat", -285, {1,}, 0, 0},
-	},
 	[21849] = {
-			{"by_school", "target_res_flat", 324, {1,}, 0, 0},
 			{"by_school", "target_res_flat", 20, {2,}, 0, 2},
 			{"by_school", "target_res_flat", 20, {3,}, 0, 3},
 			{"by_school", "target_res_flat", 20, {4,}, 0, 4},
@@ -6827,7 +6841,6 @@ local class_hostile_buffs = {
 			{"raw", "vuln_phys", -0.19999999, nil, 1, 1},
 	},
 	[21850] = {
-			{"by_school", "target_res_flat", 385, {1,}, 0, 0},
 			{"by_school", "target_res_flat", 27, {2,}, 0, 2},
 			{"by_school", "target_res_flat", 27, {3,}, 0, 3},
 			{"by_school", "target_res_flat", 27, {4,}, 0, 4},
@@ -6838,14 +6851,8 @@ local class_hostile_buffs = {
 	[27546] = {
 			{"by_school", "vuln_mod", -0.5, {1,2,3,4,5,6,7,}, 1, 1},
 	},
-	[9749] = {
-			{"by_school", "target_res_flat", -395, {1,}, 0, 0},
-	},
 	[428713] = {
 			{"raw", "vuln_phys", -0.19999999, nil, 1, 1},
-	},
-	[9907] = {
-			{"by_school", "target_res_flat", -505, {1,}, 0, 0},
 	},
 };
 for k, v in pairs(class_hostile_buffs) do sc.hostile_buffs[k] = v; end
@@ -9937,7 +9944,7 @@ local set_bonuses = {
 	[1621] = {{3,14462},{6,9346},},
 	[2113] = {{2,1300942},{3,1301005},{4,1301076},},
 	[344] = {{2,14047},{4,23044},{6,14467},},
-	[1792] = {{2,432639},},
+	[1792] = {{2,432639},{3,448324},},
 	[1636] = {{3,14462},{6,9318},},
 	[209] = {{8,23561},},
 	[1785] = {{6,14047},},
@@ -9945,7 +9952,7 @@ local set_bonuses = {
 	[1661] = {{3,9117},{6,9408},},
 	[216] = {{3,21899},{5,23570},},
 	[1850] = {{2,1213810},{4,1213894},},
-	[1584] = {{2,435974},{3,435975},},
+	[1584] = {{2,435974},{2,436239},{3,435975},},
 	[540] = {{2,14047},{4,23044},{6,14467},},
 	[1732] = {{2,14467},{3,22804},{6,14047},},
 	[1885] = {{2,1219421},{4,1219423},{6,1219462},},
@@ -9971,7 +9978,7 @@ local set_bonuses = {
 	[1890] = {{6,1219359},},
 	[486] = {{2,7503},{3,7597},},
 	[1774] = {{2,14047},{4,23047},{6,14467},},
-	[321] = {{2,13385},{3,1251990},{5,1251984},},
+	[321] = {{2,13385},{3,1251990},{5,1251984},{6,1251991},},
 	[348] = {{2,14049},{6,14467},},
 	[443] = {{3,21636},},
 	[2074] = {{2,14467},{3,23044},{6,467550},},
@@ -9999,6 +10006,7 @@ local set_bonuses = {
 	[1740] = {{2,14467},{6,14047},},
 	[465] = {{2,9318},},
 	[208] = {{5,18384},{5,7597},},
+	[2135] = {{3,1324288},},
 	[1914] = {{2,1223336},},
 	[490] = {{2,21625},{3,21894},},
 	[213] = {{5,23558},},
@@ -10025,6 +10033,7 @@ local set_bonuses = {
 	[2082] = {{2,467550},{6,14467},},
 	[1897] = {{2,1218592},{4,1218693},{6,1218697},},
 	[2096] = {{2,14047},{4,22804},{6,14467},},
+	[1639] = {{2,436239},},
 	[1735] = {{2,14467},{6,14047},},
 	[509] = {{3,26173},},
 	[1652] = {{3,9117},{6,9331},},
@@ -10053,7 +10062,7 @@ local set_bonuses = {
 	[1650] = {{2,432639},},
 	[1736] = {{2,14467},{6,467550},},
 	[1778] = {{6,14492},},
-	[1781] = {{2,432639},},
+	[1781] = {{2,432639},{3,436239},},
 	[1643] = {{2,21618},},
 	[1808] = {{2,467401},{4,467405},{6,467494},},
 	[475] = {{2,21618},{3,24457},{5,24460},},
@@ -10073,12 +10082,13 @@ local set_bonuses = {
 	[477] = {{2,9331},{5,24467},},
 	[517] = {{6,14047},},
 	[383] = {{2,14467},{6,14049},},
+	[2134] = {{3,1324312},},
 	[1903] = {{2,1218476},},
 	[2081] = {{2,14047},{6,14467},},
 	[1649] = {{2,432639},},
 	[1905] = {{3,1223336},},
 	[384] = {{2,14467},{6,14049},},
-	[1585] = {{3,435976},{3,7574},},
+	[1585] = {{2,436239},{3,435976},{3,7574},},
 	[515] = {{6,14049},},
 	[1637] = {{2,432639},},
 	[2112] = {{2,1300943},{4,1301077},},
@@ -10239,6 +10249,7 @@ local set_bonuses = {
 	[1704] = {{2,456396},{4,456398},{6,456402},},
 	[1754] = {{2,14047},{4,23044},{6,14467},},
 	[2111] = {{2,1300959},},
+	[261] = {{3,1314828},},
 	[1951] = {{2,1226984},{4,1226986},{6,1226997},},
 	[1788] = {{2,7516},{3,9140},{5,13665},},
 	[514] = {{6,14047},},
@@ -10275,6 +10286,7 @@ local set_bonuses = {
 	[1854] = {{2,1214085},},
 	[548] = {{2,14049},{6,14467},},
 	[389] = {{2,14467},{3,23044},{6,14047},},
+	[2136] = {{3,1324674},{4,1324675},},
 	[1915] = {{2,1223336},},
 	[1622] = {{3,14462},{6,9336},},
 	[2131] = {{2,1317038},},
@@ -10334,7 +10346,7 @@ local set_bonuses = {
 	[1891] = {{2,1219260},{6,1219293},},
 	[1963] = {{4,1226462},{6,1240573},},
 	[1832] = {{2,468412},{5,468453},},
-	[1648] = {{3,449933},},
+	[1648] = {{2,436239},{3,449933},},
 	[1948] = {{4,1226125},{6,1226126},},
 	[462] = {{2,23727},{2,9396},},
 	[1797] = {{2,9336},},
@@ -10346,7 +10358,7 @@ local set_bonuses = {
 	[1586] = {{2,9345},{3,24433},},
 	[1744] = {{2,14467},{6,14049},},
 	[508] = {{3,26172},},
-	[1] = {{3,9331},{4,1301123},},
+	[1] = {{3,9331},{4,1301123},{5,1314795},},
 	[189] = {{3,13198},},
 	[473] = {{2,7503},{3,18384},},
 	[1753] = {{2,14047},{6,14467},},
@@ -10398,7 +10410,7 @@ local set_bonuses = {
 	[1889] = {{2,1219367},{6,1219369},},
 	[1896] = {{2,1219189},{4,1219191},{6,1219193},},
 	[1645] = {{2,9331},},
-	[1646] = {{3,449933},},
+	[1646] = {{2,436239},{3,449933},},
 	[1587] = {{2,432639},},
 	[2090] = {{2,467550},{4,22804},{6,14467},},
 	[1712] = {{2,457349},{6,457464},},
@@ -10649,6 +10661,8 @@ local set_effects = {
 			{"by_school", "crit", 0.02, {1,2,3,4,5,6,7,}, 32, 1},
 	},
 	[1300934] = {
+			{"raw", "melee_haste", 0.01, nil, 33, 0},
+			{"raw", "ranged_haste", 0.01, nil, 33, 0},
 			{"raw", "cast_haste", 0.01, nil, 1, 1},
 	},
 };
@@ -10777,7 +10791,7 @@ local passives = {
 			{"by_school", "dmg_mod", 0.099999994, {1,2,3,4,5,6,7,}, 1, 1},
 	},
 	[17051] = {
-			{"aura_pts", -1, 0.14, {21850,9885,21849,1310503,364163,9884,1291335,1126,5232,6756,5234,24752,8907,}, 0, 0},
+			{"aura_pts", -1, 0.14, {21850,9885,21849,1310503,364163,9884,1291335,5232,6756,5234,24752,8907,}, 0, 0},
 	},
 	[16858] = {
 			{"ability", "base_mod", 0.08, {99,}, 0, 0},
@@ -10794,7 +10808,7 @@ local passives = {
 			{"ability", "effect_mod", 0.12, {22568,1079,}, 0, 1},
 	},
 	[17053] = {
-			{"aura_pts", -1, 0.21, {21850,9885,21849,1310503,364163,9884,1291335,1126,5232,6756,5234,24752,8907,}, 0, 0},
+			{"aura_pts", -1, 0.21, {21850,9885,21849,1310503,364163,9884,1291335,5232,6756,5234,24752,8907,}, 0, 0},
 	},
 	[16859] = {
 			{"ability", "base_mod", 0.16, {99,}, 0, 0},
@@ -10812,10 +10826,10 @@ local passives = {
 			{"ability", "effect_mod", 0.14999999, {22568,1079,}, 0, 1},
 	},
 	[17050] = {
-			{"aura_pts", -1, 0.07, {21850,9885,21849,1310503,364163,9884,1291335,1126,5232,6756,5234,24752,8907,}, 0, 0},
+			{"aura_pts", -1, 0.07, {21850,9885,21849,1310503,364163,9884,1291335,5232,6756,5234,24752,8907,}, 0, 0},
 	},
 	[17055] = {
-			{"aura_pts", -1, 0.35, {21850,9885,21849,1310503,364163,9884,1291335,1126,5232,6756,5234,24752,8907,}, 0, 0},
+			{"aura_pts", -1, 0.35, {21850,9885,21849,1310503,364163,9884,1291335,5232,6756,5234,24752,8907,}, 0, 0},
 	},
 	[16904] = {
 			{"raw", "phys_mod", 0.06, nil, 1, 0},
@@ -10830,7 +10844,7 @@ local passives = {
 			{"by_school", "dmg_mod", 0.08, {1,2,3,4,5,6,7,}, 1, 1},
 	},
 	[17054] = {
-			{"aura_pts", -1, 0.28, {21850,9885,21849,1310503,364163,9884,1291335,1126,5232,6756,5234,24752,8907,}, 0, 0},
+			{"aura_pts", -1, 0.28, {21850,9885,21849,1310503,364163,9884,1291335,5232,6756,5234,24752,8907,}, 0, 0},
 	},
 	[16968] = {
 			{"ability", "cost_mod_flat", -12, {5221,}, 0, 0},
@@ -10846,6 +10860,7 @@ sc.shapeshift_passives = {
 	},
 	[1178] = {
 			{"raw", "base_res_phys_mod", 1.8, nil, 32, 1},
+			{"raw", "hp_flat", 20, nil, 2, 2},
 			{"raw", "ap_flat", 30, nil, 258, 3},
 			{"ability", "cost_mod", -1, {770,}, 0, 4},
 	},
@@ -10853,10 +10868,11 @@ sc.shapeshift_passives = {
 			{"raw", "base_res_phys_mod", 3.6, nil, 32, 0},
 	},
 	[21178] = {
-			{"by_school", "threat", 0.29999998, {1,2,3,4,5,6,7,}, 0, 0},
+			{"by_school", "threat", 0.5, {1,2,3,4,5,6,7,}, 0, 0},
 	},
 	[9635] = {
 			{"raw", "base_res_phys_mod", 3.6, nil, 32, 1},
+			{"raw", "hp_flat", 600, nil, 2, 2},
 			{"raw", "ap_flat", 120, nil, 258, 3},
 			{"ability", "cost_mod", -1, {770,}, 0, 4},
 	},

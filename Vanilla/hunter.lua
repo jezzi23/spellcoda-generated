@@ -7,6 +7,10 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 370175;
 sc.equippable_armors_mask = 15;
+sc.lookups = {
+};
+sc.dummies = {
+};
 sc.spells = {
 	[24562] = {
 		cast_time = 0,
@@ -3949,15 +3953,17 @@ sc.spells = {
 	},
 	[409593] = {
 		direct = {
-			base_min = 2.976264,
-			base_max = 2.976264,
-			min = 0.0001,
-			max = 0.0001,
+			base_min = 17.470669,
+			base_max = 17.470669,
+			base_per_lvl = 3.7630575,
+			base_per_lvl_sq = 0.13218653,
+			min = 1,
+			max = 1,
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
-			per_lvl = 0.641066,
-			per_lvl_sq = 0.022519,
+			per_lvl = 0,
+			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0, comp_flags.applies_ranged, comp_flags.weapon_pct),
 		},
@@ -4775,6 +4781,21 @@ sc.spells = {
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.only_threat),
 	},
 	[409552] = {
+		direct = {
+			base_min = 2.976264,
+			base_max = 2.976264,
+			min = 10,
+			max = 10,
+			var = 0,
+			school1 = schools.fire,
+			coef = 0,
+			coef_ap_min = 0.14,
+			coef_ap_max = 0.14,
+			per_lvl = 0.641066,
+			per_lvl_sq = 0.022519,
+			jump_amp = 1,
+			flags = bit.bor(0, comp_flags.always_hit),
+		},
 		periodic = {
 			base_min = 2.976264,
 			base_max = 2.976264,

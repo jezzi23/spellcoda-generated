@@ -7,6 +7,10 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 558208;
 sc.equippable_armors_mask = 3;
+sc.lookups = {
+};
+sc.dummies = {
+};
 sc.spells = {
 	[10201] = {
 		direct = {
@@ -3640,7 +3644,7 @@ sc.spells = {
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
-			per_lvl = 0,
+			per_lvl = 2.16,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),

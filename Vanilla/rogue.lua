@@ -7,6 +7,10 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 368796;
 sc.equippable_armors_mask = 7;
+sc.lookups = {
+};
+sc.dummies = {
+};
 sc.spells = {
 	[8676] = {
 		direct = {
@@ -1003,13 +1007,15 @@ sc.spells = {
 		direct = {
 			base_min = 5.74153,
 			base_max = 5.74153,
+			base_per_lvl = -0.255683,
+			base_per_lvl_sq = 0.032656,
 			min = 0.95,
 			max = 0.95,
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
 			per_lvl = 0,
-			per_lvl_sq = 0.032656,
+			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0, comp_flags.applies_mh, comp_flags.applies_oh, comp_flags.full_oh, comp_flags.normalized_weapon, comp_flags.weapon_pct),
 		},

@@ -7,6 +7,15 @@ local spell_flags = sc.spell_flags
 local comp_flags = sc.comp_flags
 sc.equippable_weapons_mask = 499;
 sc.equippable_armors_mask = 95;
+sc.lookups = {
+	exorcist = 415076,
+	sacred_shield = 412019,
+	fanaticism = 429142,
+};
+sc.dummies = {
+	[412019] = {{6, 6, 0},{6, 6, 1},{100, 100, 2},},
+	[429142] = {{18, 18, 0},{60, 60, 1},},
+};
 sc.spells = {
 	[20347] = {
 		direct = {

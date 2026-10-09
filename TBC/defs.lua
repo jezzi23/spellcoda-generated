@@ -1,6 +1,6 @@
 -- THIS FILE IS GENERATED
 local _, sc = ...;
-sc.addon_build_id = 2885;
+sc.addon_build_id = 2892;
 sc.client_name_src = "wow_anniversary";
 sc.client_version_src = "2.5.6.69795";
 _, sc.class = UnitClass("player");
@@ -28,7 +28,6 @@ end
 if C_Engraving and C_Engraving.IsEngravingEnabled() then
     sc.game_mode = bit.bor(sc.game_mode, sc.game_modes.season_of_discovery);
 end
-sc.lookups = {};
 sc.classes = {
 	warrior = "WARRIOR",
 	paladin = "PALADIN",
