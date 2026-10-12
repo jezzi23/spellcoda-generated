@@ -44267,6 +44267,23 @@ sc.armor = {
 	[28379] = 104,
 	[28380] = 104,
 };
+sc.item_stat_effects = {
+	ITEM_MOD_AGILITY_SHORT = {
+		{"by_attr", "stat_flat", 1, {2,}, 2, 0},
+	},
+	ITEM_MOD_STRENGTH_SHORT = {
+		{"by_attr", "stat_flat", 1, {1,}, 2, 0},
+	},
+	ITEM_MOD_INTELLECT_SHORT = {
+		{"by_attr", "stat_flat", 1, {4,}, 2, 0},
+	},
+	ITEM_MOD_SPIRIT_SHORT = {
+		{"by_attr", "stat_flat", 1, {5,}, 2, 0},
+	},
+	ITEM_MOD_STAMINA_SHORT = {
+		{"by_attr", "stat_flat", 1, {3,}, 2, 0},
+	},
+};
 sc.damage_enchants = {
 	[27] = {-10, -10},
 	[30] = {1, 1},
