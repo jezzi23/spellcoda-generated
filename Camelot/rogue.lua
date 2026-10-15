@@ -2334,7 +2334,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 408,
 		gcd = 1,
-		train = 0,
+		train = 35000,
 		anyschool = schools.physical,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.finishing_move_dur, spell_flags.refund_on_miss),
 	},

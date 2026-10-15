@@ -4497,7 +4497,7 @@ sc.spells = {
 		lvl_outdated = 70,
 		base_id = 552,
 		gcd = 1.5000001,
-		train = 0,
+		train = 11000,
 		anyschool = schools.holy,
 		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant),
 	},

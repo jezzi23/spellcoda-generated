@@ -509,7 +509,7 @@ sc.spells = {
 		lvl_outdated = 27,
 		base_id = 10,
 		gcd = 1.5000001,
-		train = -1,
+		train = 2000,
 		flags = bit.bor(0, spell_flags.channel, spell_flags.eval, spell_flags.ot_haste_improved),
 	},
 	[27133] = {
@@ -4975,7 +4975,7 @@ sc.spells = {
 		lvl_outdated = 70,
 		base_id = 66,
 		gcd = 1.5000001,
-		train = -1002,
+		train = 96000,
 		anyschool = schools.arcane,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.base_mana_cost, spell_flags.instant),
 	},
