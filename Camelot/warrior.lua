@@ -42,7 +42,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -289,7 +289,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -557,7 +557,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -654,7 +654,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -798,7 +798,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -1377,7 +1377,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -1396,7 +1396,7 @@ sc.spells = {
 		direct = {
 			threat_mod_flat = 0,
 			school1 = schools.physical,
-			flags = bit.bor(0, comp_flags.always_hit, comp_flags.unbounded_aoe, comp_flags.no_attack),
+			flags = bit.bor(0, comp_flags.no_attack),
 		},
 		cast_time = 0,
 		cost = 10,
@@ -3727,8 +3727,8 @@ sc.class_buffs = {
 			{"ability", "cost_mod", -1, {6673,}, 0, 0},
 	},
 	[1259813] = {
-			{"ability", "cost_mod", -0.099999994, {845,6572,1310222,1715,78,20252,23881,5308,6552,7384,461830,429765,23922,12294,1310196,6343,1240193,72,1680,694,20647,}, 64, 0},
-			{"ability", "effect_mod", 0.099999994, {845,6572,1310222,1715,78,20252,23881,5308,6552,7384,461830,429765,23922,12294,1310196,6343,1240193,72,1680,694,20647,}, 64, 1},
+			{"ability", "cost_mod", -0.099999994, {845,6572,1310222,1715,78,20252,23881,5308,6552,7384,461830,429765,23922,12294,1310196,6343,1240193,72,1680,694,20647,}, 0, 0},
+			{"ability", "effect_mod", 0.099999994, {845,6572,1310222,1715,78,20252,23881,5308,6552,7384,461830,429765,23922,12294,1310196,6343,1240193,72,1680,694,20647,}, 0, 1},
 	},
 	[11551] = {
 			{"raw", "ap_flat", 111, nil, 2, 0},
