@@ -3841,6 +3841,7 @@ sc.class_buffs = {
 	},
 	[36839] = {
 			{"raw", "class_misc", 1, nil, 0, 0},
+			{"raw", "melee_haste", -0.5, nil, 33, 1},
 			{"raw", "class_misc", 1, nil, 0, 1},
 	},
 	[40934] = {

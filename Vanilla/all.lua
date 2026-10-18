@@ -22,6 +22,9 @@ sc.player_buffs = {
 			{"by_school", "res_flat", 240, {1,}, 0, 0},
 			{"by_attr", "stat_flat", 10, {1,2,3,4,5,}, 2, 1},
 	},
+	[448574] = {
+			{"raw", "melee_haste", -0.75, nil, 33, 1},
+	},
 	[10404] = {
 			{"raw", "player_vuln_phys", 0, nil, 1, 1},
 	},
@@ -280,6 +283,7 @@ sc.player_buffs = {
 	[425336] = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 1, 0},
 			{"raw", "mp5_flat", 25, nil, 0, 1},
+			{"raw", "melee_haste", 0, nil, 33, 4},
 	},
 	[20716] = {
 			{"raw", "melee_haste", -1, nil, 33, 1},
@@ -1049,6 +1053,7 @@ sc.player_buffs = {
 	},
 	[407025] = {
 			{"raw", "player_vuln_phys", 1, nil, 1, 0},
+			{"raw", "melee_haste", 0.5, nil, 33, 1},
 	},
 	[3416] = {
 			{"raw", "phys_dmg_flat", 45, nil, 0, 1},
@@ -1899,6 +1904,9 @@ sc.player_buffs = {
 	[17401] = {
 			{"raw", "melee_haste", -0.25, nil, 33, 1},
 	},
+	[367792] = {
+			{"raw", "melee_haste", 1, nil, 33, 1},
+	},
 	[465414] = {
 			{"raw", "phys_dmg_flat", 15, nil, 0, 0},
 			{"raw", "melee_haste", 0.29999998, nil, 33, 1},
@@ -1995,6 +2003,9 @@ sc.player_buffs = {
 			{"by_school", "dmg_mod", 0.049999997, {1,2,3,4,5,6,7,}, 1, 1},
 			{"raw", "phys_mod", 0.049999997, nil, 1, 1},
 	},
+	[443975] = {
+			{"raw", "melee_haste", -0.5, nil, 33, 1},
+	},
 	[446618] = {
 			{"raw", "ap_flat", 60, nil, 2, 0},
 			{"raw", "rap_flat", 60, nil, 2, 1},
@@ -2049,6 +2060,9 @@ sc.player_buffs = {
 	[3673] = {
 			{"raw", "phys_dmg_flat", -40, nil, 0, 0},
 	},
+	[438136] = {
+			{"raw", "melee_haste", -0.75, nil, 33, 1},
+	},
 	[26261] = {
 			{"raw", "mp5_flat", 735, nil, 0, 1},
 	},
@@ -2088,6 +2102,9 @@ sc.player_buffs = {
 	},
 	[469210] = {
 			{"raw", "healing_power_flat", 31, nil, 2, 0},
+	},
+	[1219150] = {
+			{"raw", "melee_haste", 0.01, nil, 33, 0},
 	},
 	[363757] = {
 			{"raw", "hp_mod", 0, nil, 32, 0},
@@ -2730,6 +2747,9 @@ sc.player_buffs = {
 			{"raw", "cast_haste", 1, nil, 1, 3},
 			{"raw", "ranged_haste", 1, nil, 33, 4},
 	},
+	[467127] = {
+			{"raw", "melee_haste", 0.29999998, nil, 33, 0},
+	},
 	[3136] = {
 			{"raw", "melee_haste", 0.32999998, nil, 33, 0},
 	},
@@ -3329,6 +3349,9 @@ sc.player_buffs = {
 			{"by_school", "sp_dmg_flat", 17, {1,2,3,4,5,6,7,}, 2, 0},
 			{"raw", "healing_power_flat", 34, nil, 2, 1},
 	},
+	[1219235] = {
+			{"raw", "melee_haste", 0.14999999, nil, 33, 2},
+	},
 	[15802] = {
 			{"by_attr", "stat_flat", -1, {1,}, 2, 0},
 			{"by_attr", "stat_flat", -1, {3,}, 2, 1},
@@ -3433,6 +3456,9 @@ sc.player_buffs = {
 	},
 	[426925] = {
 			{"raw", "player_vuln_phys", -0.75, nil, 1, 2},
+	},
+	[447548] = {
+			{"raw", "melee_haste", -1, nil, 33, 2},
 	},
 	[1214102] = {
 			{"by_school", "threat", -0.19999999, {1,2,3,4,5,6,7,}, 0, 0},
@@ -3781,6 +3807,9 @@ sc.player_buffs = {
 	},
 	[1230596] = {
 			{"by_attr", "stat_flat", 200, {1,}, 2, 0},
+	},
+	[447588] = {
+			{"raw", "melee_haste", -0.5, nil, 33, 1},
 	},
 	[426097] = {
 			{"raw", "player_vuln_phys", 0.25, nil, 1, 2},
@@ -4768,6 +4797,9 @@ sc.player_buffs = {
 	[23782] = {
 			{"raw", "hp_flat", 0, nil, 2, 0},
 	},
+	[1218695] = {
+			{"raw", "melee_haste", 0.099999994, nil, 33, 0},
+	},
 	[19837] = {
 			{"raw", "ap_flat", 115, nil, 2, 0},
 	},
@@ -4987,6 +5019,9 @@ sc.player_buffs = {
 	},
 	[456361] = {
 			{"creature", "dmg_mod", 0.03, {64,}, 1, 0},
+	},
+	[367756] = {
+			{"raw", "melee_haste", 1, nil, 33, 1},
 	},
 	[469261] = {
 			{"by_school", "dmg_mod", 0.099999994, {1,2,3,4,5,6,7,}, 1, 1},

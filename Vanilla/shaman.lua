@@ -4825,6 +4825,7 @@ sc.class_buffs = {
 	[425336] = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 1, 0},
 			{"raw", "mp5_flat", 25, nil, 0, 1},
+			{"raw", "melee_haste", 0, nil, 33, 4},
 	},
 	[415105] = {
 			{"ability", "cast_mod", -1, {421,408490,}, 64, 0},

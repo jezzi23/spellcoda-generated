@@ -6904,6 +6904,9 @@ sc.class_buffs = {
 	[24752] = {
 			{"by_school", "res_flat", 285, {1,}, 0, 0},
 	},
+	[32134] = {
+			{"raw", "melee_haste", -0.19999999, nil, 33, 1},
+	},
 	[33943] = {
 			{"applies_aura", "shapeshift_passives", 0, {33948,34764,}, 16, 0},
 	},
