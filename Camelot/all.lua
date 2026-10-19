@@ -16093,14 +16093,16 @@ sc.passives = {
 	},
 	[20550] = {
 			{"raw", "hp_mod", 0.049999997, nil, 32, 0},
-			{"by_school", "crit_mod", 0.02, {}, 0, 1},
+			{"by_school", "crit_mod", 0.02, {1,2,3,4,5,6,7,}, 0, 1},
+			{"raw", "heal_crit_mod", 0.02, nil, 0, 2},
 	},
 	[19153] = {
 			{"creature", "dmg_mod", 0.03, {64,}, 1, 0},
 			{"creature", "crit_mod", 0.03, {64,}, 0, 1},
 	},
 	[1259719] = {
-			{"wpn_subclass", "phys_crit_mod", 0.02, {48}, 8, 0},
+			{"by_school", "crit_mod", 0.02, {1,2,3,4,5,6,7,}, 0, 0},
+			{"raw", "heal_crit_mod", 0.02, nil, 0, 1},
 	},
 	[6317] = {
 			{"raw", "phys_dmg_flat", 8, nil, 0, 0},
