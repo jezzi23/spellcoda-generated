@@ -1544,7 +1544,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 72,
 		gcd = 1.5000001,
-		train = 0,
+		train = 54000,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
 	},
 	[845] = {
@@ -1762,7 +1762,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 772,
 		gcd = 1.5000001,
-		train = 0,
+		train = 62000,
 		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.refund_on_miss),
 	},
 	[18499] = {
@@ -2476,7 +2476,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1719,
 		gcd = 1.5000001,
-		train = 0,
+		train = 42000,
 		anyschool = schools.physical,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
 	},

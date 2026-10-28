@@ -4792,8 +4792,8 @@ sc.spells = {
 	},
 	[14914] = {
 		direct = {
-			min = 51,
-			max = 65,
+			min = 48,
+			max = 60,
 			var = 0.22727273,
 			school1 = schools.holy,
 			coef = 0.75,
@@ -7314,6 +7314,9 @@ sc.class_buffs = {
 	},
 	[27683] = {
 			{"by_school", "res_flat", 60, {6,}, 0, 0},
+	},
+	[1326168] = {
+			{"by_attr", "stat_mod", 0.14999999, {5,}, 32, 0},
 	},
 	[9035] = {
 			{"raw", "ap_flat", -43, nil, 2, 0},

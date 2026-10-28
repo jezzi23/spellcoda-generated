@@ -6044,8 +6044,7 @@ sc.class_buffs = {
 	},
 	[18288] = {
 			{"aura_pts", -1, 0.5, {11708,7646,1108,6205,702,11707,}, 64, 0},
-			{"ability", "base_mod", 0.5, {980,}, 64, 0},
-			{"ability", "base_mod_ot", 0.5, {980,}, 64, 0},
+			{"aura_pts_flat", -1, -0.19999999, {425463,}, 64, 1},
 	},
 	[6307] = {
 			{"by_attr", "stat_flat", 3, {3,}, 2, 0},
@@ -6224,6 +6223,9 @@ local class_hostile_buffs = {
 	[1293694] = {
 			{"ability", "vuln_mod", 0.099999994, {403677,980,1120,172,689,}, 5, 1},
 	},
+	[11713] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
+	},
 	[440882] = {
 			{"by_school", "vuln_mod", -0.19999999, {1,2,3,4,5,6,7,}, 1, 0},
 	},
@@ -6240,9 +6242,18 @@ local class_hostile_buffs = {
 			{"by_school", "target_res_flat", -30, {2,3,4,5,6,7,}, 0, 0},
 			{"by_school", "vuln_mod", 0.04, {1,2,3,4,5,6,7,}, 1, 1},
 	},
+	[980] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
+	},
+	[6217] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
+	},
 	[1311680] = {
 			{"by_school", "target_res_flat", -75, {2,3,4,5,6,7,}, 0, 0},
 			{"by_school", "vuln_mod", 0.099999994, {1,2,3,4,5,6,7,}, 1, 1},
+	},
+	[1014] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
 	},
 	[403501] = {
 			{"ability", "vuln_mod", 0.099999994, {403677,980,1120,172,689,}, 5, 1},
@@ -6258,6 +6269,9 @@ local class_hostile_buffs = {
 			{"by_school", "target_res_flat", -60, {2,3,4,5,6,7,}, 0, 0},
 			{"by_school", "vuln_mod", 0.08, {1,2,3,4,5,6,7,}, 1, 1},
 	},
+	[11711] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
+	},
 	[461615] = {
 			{"by_school", "target_res_flat", -27, {3,5,}, 0, 0},
 			{"by_school", "vuln_mod", 0.04, {3,5,}, 1, 1},
@@ -6265,6 +6279,9 @@ local class_hostile_buffs = {
 			{"by_school", "target_res_flat", -27, {4,}, 0, 3},
 			{"by_school", "vuln_mod", 0.04, {6,7,}, 1, 4},
 			{"by_school", "vuln_mod", 0.04, {4,}, 1, 5},
+	},
+	[11712] = {
+			{"ability", "vuln_mod", 0, {980,}, 5, 1},
 	},
 };
 for k, v in pairs(class_hostile_buffs) do sc.hostile_buffs[k] = v; end
@@ -9955,18 +9972,18 @@ local enchant_effects = {
 			{"aura_pts_flat", 3, 0.099999994, {460906,}, 0, 1},
 	},
 	[1237165] = {
-			{"by_school", "sp_dmg_flat", 21, {3,6,}, 2, 0},
+			{"by_school", "sp_dmg_flat", 21, {6,}, 2, 0},
 			{"raw", "cast_haste", 0.02, nil, 1, 1},
 	},
 	[1214085] = {
 			{"ability", "effect_mod", 0.099999994, {403629,686,}, 0, 1},
 	},
 	[1237164] = {
-			{"by_school", "sp_dmg_flat", 17, {3,6,}, 2, 0},
+			{"by_school", "sp_dmg_flat", 17, {6,}, 2, 0},
 			{"raw", "cast_haste", 0.02, nil, 1, 1},
 	},
 	[1237162] = {
-			{"by_school", "sp_dmg_flat", 14, {3,6,}, 2, 0},
+			{"by_school", "sp_dmg_flat", 14, {6,}, 2, 0},
 			{"raw", "cast_haste", 0.01, nil, 1, 1},
 	},
 	[440870] = {

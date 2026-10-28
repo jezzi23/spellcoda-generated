@@ -6919,7 +6919,7 @@ local class_hostile_buffs = {
 			{"raw", "rap_flat", 26, nil, 0, 1},
 	},
 	[14325] = {
-			{"raw", "rap_flat", 71, nil, 0, 1},
+			{"raw", "rap_flat", 143, nil, 0, 1},
 	},
 };
 for k, v in pairs(class_hostile_buffs) do sc.hostile_buffs[k] = v; end
