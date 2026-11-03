@@ -1987,7 +1987,7 @@ sc.spells = {
 		base_id = 1312002,
 		gcd = 1.5000001,
 		train = 18000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.talent),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent),
 	},
 	[13018] = {
 		direct = {
@@ -2112,7 +2112,7 @@ sc.spells = {
 		base_id = 1312002,
 		gcd = 1.5000001,
 		train = 14500,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.talent),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent),
 	},
 	[1312002] = {
 		direct = {
@@ -2535,7 +2535,7 @@ sc.spells = {
 		base_id = 1312002,
 		gcd = 1.5000001,
 		train = 3000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.talent),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent),
 	},
 	[400616] = {
 		direct = {
@@ -2961,7 +2961,7 @@ sc.spells = {
 		base_id = 1312002,
 		gcd = 1.5000001,
 		train = 32000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.talent),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent),
 	},
 	[11416] = {
 		cast_time = 10,
@@ -3303,7 +3303,7 @@ sc.spells = {
 		base_id = 1312002,
 		gcd = 1.5000001,
 		train = 40000,
-		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.talent),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval, spell_flags.talent),
 	},
 	[118] = {
 		cast_time = 1.5000001,
@@ -5923,7 +5923,7 @@ sc.node_id_to_max_ranks = {
 	[105797] = 2,
 	[105776] = 3,
 	[105815] = 2,
-	[105802] = 2,
+	[105802] = 3,
 	[105774] = 3,
 	[105781] = 1,
 	[105796] = 5,
@@ -6002,12 +6002,12 @@ sc.class_buffs = {
 			{"ability", "cast_mod", -0.25, {11366,}, 64, 0},
 	},
 	[11426] = {
-			{"ability", "effect_mod", 0.03, {1312002,24530,401502,116,122,10,120,}, 0, 1},
-			{"ability", "effect_mod_ot", 0.03, {401502,10,}, 0, 2},
+			{"ability", "effect_mod", 0.049999997, {1312002,24530,401502,116,122,10,120,}, 0, 1},
+			{"ability", "effect_mod_ot", 0.049999997, {401502,10,}, 0, 2},
 	},
 	[13032] = {
-			{"ability", "effect_mod", 0.03, {1312002,24530,401502,116,122,10,120,}, 0, 1},
-			{"ability", "effect_mod_ot", 0.03, {401502,10,}, 0, 2},
+			{"ability", "effect_mod", 0.049999997, {1312002,24530,401502,116,122,10,120,}, 0, 1},
+			{"ability", "effect_mod_ot", 0.049999997, {401502,10,}, 0, 2},
 	},
 	[24544] = {
 			{"ability", "crit", 0.049999997, {5143,428741,2139,1449,}, 0, 0},
@@ -6035,8 +6035,8 @@ sc.class_buffs = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 1, 0},
 	},
 	[13033] = {
-			{"ability", "effect_mod", 0.03, {1312002,24530,401502,116,122,10,120,}, 0, 1},
-			{"ability", "effect_mod_ot", 0.03, {401502,10,}, 0, 2},
+			{"ability", "effect_mod", 0.049999997, {1312002,24530,401502,116,122,10,120,}, 0, 1},
+			{"ability", "effect_mod_ot", 0.049999997, {401502,10,}, 0, 2},
 	},
 	[22782] = {
 			{"raw", "regen_while_casting", 0.5, nil, 0, 1},
@@ -6078,8 +6078,8 @@ sc.class_buffs = {
 			{"raw", "melee_haste", -0.25, nil, 33, 0},
 	},
 	[13031] = {
-			{"ability", "effect_mod", 0.03, {1312002,24530,401502,116,122,10,120,}, 0, 1},
-			{"ability", "effect_mod_ot", 0.03, {401502,10,}, 0, 2},
+			{"ability", "effect_mod", 0.049999997, {1312002,24530,401502,116,122,10,120,}, 0, 1},
+			{"ability", "effect_mod_ot", 0.049999997, {401502,10,}, 0, 2},
 	},
 	[400730] = {
 			{"ability", "cost_mod", -10, {133,401502,428878,412532,}, 64, 0},
@@ -6114,8 +6114,8 @@ sc.class_buffs = {
 			{"ability", "effect_mod", 0.099999994, {1312002,5143,2948,11113,24530,2120,11366,133,401502,116,122,1449,10,400618,120,400574,2136,}, 0, 1},
 	},
 	[400573] = {
-			{"by_attr", "sd_of_stat_pct", 0.14999999, {4,}, 32, 0},
-			{"ability", "cost_mod", 1.75, {400574,}, 0, 1},
+			{"by_attr", "sd_of_stat_pct", 0.12, {4,}, 32, 0},
+			{"ability", "cost_mod", 1, {400574,}, 0, 1},
 	},
 	[24389] = {
 			{"ability", "effect_mod_flat", 0, {24530,400618,2136,}, 64, 0},
@@ -6130,8 +6130,8 @@ sc.class_buffs = {
 			{"ability", "cost_mod", -10, {1312002,5143,2948,11113,24530,1326079,2120,11366,425124,133,401502,428878,116,412532,122,1449,401556,10,400618,120,400610,400613,400574,2136,}, 64, 0},
 	},
 	[1326891] = {
-			{"ability", "effect_mod", 0.03, {1312002,24530,401502,116,122,10,120,}, 0, 0},
-			{"ability", "effect_mod_ot", 0.03, {401502,10,}, 0, 1},
+			{"ability", "effect_mod", 0.14999999, {1312002,24530,401502,116,122,10,120,}, 0, 0},
+			{"ability", "effect_mod_ot", 0.14999999, {401502,10,}, 0, 1},
 	},
 	[12042] = {
 			{"ability", "effect_mod", 0.29999998, {1312002,5143,2948,11113,24530,1326079,2120,11366,133,401502,116,122,1449,10,400618,120,400610,400574,2136,}, 0, 0},
@@ -6181,7 +6181,7 @@ local class_hostile_buffs = {
 			{"raw", "vuln_phys", -0.19999999, nil, 1, 0},
 	},
 	[12579] = {
-			{"ability", "vuln_mod", 0.049999997, {120,}, 5, 0},
+			{"ability", "vuln_mod", 0.19999999, {120,}, 5, 0},
 	},
 	[460338] = {
 			{"by_school", "sp_dmg_flat", 30, {2,3,}, 0, 2},

@@ -1858,7 +1858,7 @@ sc.spells = {
 			jump_amp = 1,
 			flags = bit.bor(0, comp_flags.applies_ranged),
 		},
-		cast_time = 0.5,
+		cast_time = 0,
 		cost = 0,
 		power_type = powers.mana,
 		rank = 0,
@@ -1868,7 +1868,7 @@ sc.spells = {
 		base_id = 2764,
 		gcd = 0,
 		train = -1,
-		flags = bit.bor(0, spell_flags.eval, spell_flags.requires_ranged_slot),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.requires_ranged_slot),
 	},
 	[1768] = {
 		direct = {
@@ -3165,6 +3165,9 @@ sc.class_buffs = {
 	},
 	[2819] = {
 			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[1328826] = {
+			{"ability", "cost_mod_flat", -10, {703,53,14251,14278,1752,1776,8676,1766,1966,5171,16511,1310707,1943,2098,}, 64, 0},
 	},
 	[2818] = {
 			{"raw", "class_misc", 1, nil, 0, 0},

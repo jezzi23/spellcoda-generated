@@ -1981,7 +1981,7 @@ sc.spells = {
 			jump_amp = 1,
 			flags = bit.bor(0, comp_flags.applies_ranged),
 		},
-		cast_time = 0.5,
+		cast_time = 0,
 		cost = 0,
 		power_type = powers.mana,
 		rank = 0,
@@ -1991,7 +1991,7 @@ sc.spells = {
 		base_id = 2764,
 		gcd = 0,
 		train = -1,
-		flags = bit.bor(0, spell_flags.eval, spell_flags.requires_ranged_slot),
+		flags = bit.bor(0, spell_flags.instant, spell_flags.eval, spell_flags.requires_ranged_slot),
 	},
 	[1310222] = {
 		direct = {
@@ -3734,6 +3734,9 @@ sc.class_buffs = {
 	[11551] = {
 			{"raw", "ap_flat", 111, nil, 2, 0},
 	},
+	[2458] = {
+			{"applies_aura", "shapeshift_passives", 0, {7381,}, 16, 0},
+	},
 	[13847] = {
 			{"raw", "phys_crit", 1, nil, 32, 0},
 			{"raw", "res_phys_mod", -0.35, nil, 32, 1},
@@ -3774,6 +3777,9 @@ sc.class_buffs = {
 	[457817] = {
 			{"raw", "phys_crit", 0.099999994, nil, 32, 0},
 	},
+	[2457] = {
+			{"applies_aura", "shapeshift_passives", 0, {21156,}, 16, 0},
+	},
 	[6673] = {
 			{"raw", "ap_flat", 9, nil, 2, 0},
 	},
@@ -3790,6 +3796,9 @@ sc.class_buffs = {
 	},
 	[871] = {
 			{"raw", "player_vuln_phys", -0.59999996, nil, 1, 0},
+	},
+	[71] = {
+			{"applies_aura", "shapeshift_passives", 0, {7376,}, 16, 0},
 	},
 	[28342] = {
 			{"raw", "ap_flat", -1000, nil, 2, 0},
