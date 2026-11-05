@@ -71,8 +71,8 @@ sc.spells = {
 	},
 	[20902] = {
 		direct = {
-			base_min = 89,
-			base_max = 89,
+			base_min = 185,
+			base_max = 185,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -251,8 +251,8 @@ sc.spells = {
 	},
 	[20903] = {
 		direct = {
-			base_min = 125,
-			base_max = 125,
+			base_min = 260,
+			base_max = 260,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -471,8 +471,8 @@ sc.spells = {
 	},
 	[13550] = {
 		periodic = {
-			min = 12,
-			max = 12,
+			min = 14,
+			max = 14,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -523,8 +523,8 @@ sc.spells = {
 	},
 	[14281] = {
 		direct = {
-			min = 26,
-			max = 26,
+			min = 35,
+			max = 35,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -673,8 +673,8 @@ sc.spells = {
 	},
 	[14282] = {
 		direct = {
-			min = 39,
-			max = 39,
+			min = 50,
+			max = 50,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -776,8 +776,8 @@ sc.spells = {
 	},
 	[19434] = {
 		direct = {
-			base_min = 20,
-			base_max = 20,
+			base_min = 40,
+			base_max = 40,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -1027,8 +1027,8 @@ sc.spells = {
 	},
 	[1310785] = {
 		direct = {
-			base_min = 225,
-			base_max = 225,
+			base_min = 450,
+			base_max = 450,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -1053,8 +1053,8 @@ sc.spells = {
 	},
 	[1310786] = {
 		direct = {
-			base_min = 295,
-			base_max = 295,
+			base_min = 590,
+			base_max = 590,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -1103,8 +1103,8 @@ sc.spells = {
 	},
 	[1310687] = {
 		direct = {
-			base_min = 160,
-			base_max = 160,
+			base_min = 320,
+			base_max = 320,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -1303,8 +1303,8 @@ sc.spells = {
 	},
 	[14285] = {
 		direct = {
-			min = 134,
-			max = 134,
+			min = 175,
+			max = 175,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -1498,8 +1498,8 @@ sc.spells = {
 	},
 	[25295] = {
 		periodic = {
-			min = 111,
-			max = 111,
+			min = 135,
+			max = 135,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -2062,8 +2062,8 @@ sc.spells = {
 	},
 	[13553] = {
 		periodic = {
-			min = 48,
-			max = 48,
+			min = 58,
+			max = 58,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -2641,8 +2641,8 @@ sc.spells = {
 	},
 	[13549] = {
 		periodic = {
-			min = 6,
-			max = 6,
+			min = 7,
+			max = 7,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -2960,8 +2960,8 @@ sc.spells = {
 	},
 	[13552] = {
 		periodic = {
-			min = 34,
-			max = 34,
+			min = 40,
+			max = 40,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -3000,8 +3000,8 @@ sc.spells = {
 	},
 	[13551] = {
 		periodic = {
-			min = 22,
-			max = 22,
+			min = 26,
+			max = 26,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -3090,8 +3090,8 @@ sc.spells = {
 	},
 	[14287] = {
 		direct = {
-			min = 217,
-			max = 217,
+			min = 280,
+			max = 280,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -3636,8 +3636,8 @@ sc.spells = {
 	},
 	[20904] = {
 		direct = {
-			base_min = 166,
-			base_max = 166,
+			base_min = 350,
+			base_max = 350,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -3776,8 +3776,8 @@ sc.spells = {
 	},
 	[20900] = {
 		direct = {
-			base_min = 34,
-			base_max = 34,
+			base_min = 70,
+			base_max = 70,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -3802,8 +3802,8 @@ sc.spells = {
 	},
 	[13555] = {
 		periodic = {
-			min = 83,
-			max = 83,
+			min = 100,
+			max = 100,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -4407,8 +4407,8 @@ sc.spells = {
 	},
 	[14284] = {
 		direct = {
-			min = 94,
-			max = 94,
+			min = 120,
+			max = 120,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -4431,8 +4431,8 @@ sc.spells = {
 	},
 	[20901] = {
 		direct = {
-			base_min = 55,
-			base_max = 55,
+			base_min = 115,
+			base_max = 115,
 			min = 1,
 			max = 1,
 			var = 0,
@@ -4740,8 +4740,8 @@ sc.spells = {
 	},
 	[14286] = {
 		direct = {
-			min = 170,
-			max = 170,
+			min = 220,
+			max = 220,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -4792,8 +4792,8 @@ sc.spells = {
 	},
 	[13554] = {
 		periodic = {
-			min = 64,
-			max = 64,
+			min = 75,
+			max = 75,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -4879,8 +4879,8 @@ sc.spells = {
 	},
 	[1978] = {
 		periodic = {
-			min = 2,
-			max = 2,
+			min = 3,
+			max = 3,
 			var = 0,
 			tick_time = 3.0000002,
 			dur = 15.000001,
@@ -5494,8 +5494,8 @@ sc.spells = {
 	},
 	[14283] = {
 		direct = {
-			min = 65,
-			max = 65,
+			min = 85,
+			max = 85,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -5647,8 +5647,8 @@ sc.spells = {
 	},
 	[3044] = {
 		direct = {
-			min = 20,
-			max = 20,
+			min = 25,
+			max = 25,
 			var = 0,
 			school1 = schools.arcane,
 			coef = 0,
@@ -6751,7 +6751,7 @@ sc.class_buffs = {
 			{"wpn_subclass", "phys_mod", 0.08, {173555}, 9, 2},
 	},
 	[14319] = {
-			{"raw", "rap_flat", 30, nil, 2, 0},
+			{"raw", "rap_flat", 50, nil, 2, 0},
 	},
 	[19263] = {
 			{"raw", "parry", 0.25, nil, 2, 0},
@@ -6780,7 +6780,7 @@ sc.class_buffs = {
 			{"raw", "cast_haste", -0.29999998, nil, 1, 1},
 	},
 	[13165] = {
-			{"raw", "rap_flat", 15, nil, 2, 0},
+			{"raw", "rap_flat", 20, nil, 2, 0},
 	},
 	[415362] = {
 			{"ability", "effect_mod", 0.14999999, {1495,2973,415335,}, 0, 0},
@@ -6792,17 +6792,17 @@ sc.class_buffs = {
 			{"raw", "melee_haste", 0.06, nil, 33, 0},
 	},
 	[14321] = {
-			{"raw", "rap_flat", 47, nil, 2, 0},
+			{"raw", "rap_flat", 90, nil, 2, 0},
 	},
 	[19591] = {
 			{"raw", "phys_crit", 0, nil, 32, 0},
 			{"by_school", "crit", 0, {1,2,3,4,5,6,7,}, 32, 0},
 	},
 	[14322] = {
-			{"raw", "rap_flat", 55, nil, 2, 0},
+			{"raw", "rap_flat", 110, nil, 2, 0},
 	},
 	[14318] = {
-			{"raw", "rap_flat", 22, nil, 2, 0},
+			{"raw", "rap_flat", 35, nil, 2, 0},
 	},
 	[13161] = {
 			{"raw", "ap_flat", 50, nil, 2, 1},
@@ -6839,7 +6839,7 @@ sc.class_buffs = {
 			{"creature", "dmg_mod", 0, {2,}, 1, 1},
 	},
 	[14320] = {
-			{"raw", "rap_flat", 38, nil, 2, 0},
+			{"raw", "rap_flat", 70, nil, 2, 0},
 	},
 	[415414] = {
 			{"ability", "cost_mod", -1, {409493,409593,437123,2643,19434,3044,20736,409433,}, 64, 1},
