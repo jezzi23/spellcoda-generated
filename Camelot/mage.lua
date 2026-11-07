@@ -853,7 +853,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1326079,
 		gcd = 1.5000001,
-		train = 32631,
+		train = 31578,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 	},
 	[10138] = {

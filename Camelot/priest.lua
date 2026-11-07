@@ -1567,7 +1567,7 @@ sc.spells = {
 		lvl_outdated = 41,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 600,
+		train = 9473,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10916] = {
@@ -2121,7 +2121,7 @@ sc.spells = {
 		lvl_outdated = 57,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 1500,
+		train = 21052,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10934] = {
@@ -3163,7 +3163,7 @@ sc.spells = {
 		lvl_outdated = 25,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 100,
+		train = 1578,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10942] = {
@@ -5125,7 +5125,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 2200,
+		train = 28421,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[984] = {
@@ -6113,7 +6113,7 @@ sc.spells = {
 		lvl_outdated = 49,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 1100,
+		train = 14736,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[2651] = {
@@ -6440,7 +6440,7 @@ sc.spells = {
 		lvl_outdated = 33,
 		base_id = 1277370,
 		gcd = 1.5000001,
-		train = 300,
+		train = 5473,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[19274] = {
@@ -10965,6 +10965,7 @@ local items = {
 	[239565] = {1222994,},
 	[239575] = {1222994,},
 	[239574] = {1222994,},
+	[289296] = {23236,},
 	[18608] = {23236,},
 	[239582] = {1222994,},
 	[236112] = {1222994,},

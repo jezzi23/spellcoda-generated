@@ -660,7 +660,7 @@ sc.spells = {
 		lvl_outdated = 11,
 		base_id = 679,
 		gcd = 1.5000001,
-		train = 100,
+		train = 105,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[20349] = {
@@ -3164,7 +3164,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 20925,
 		gcd = 1.5000001,
-		train = 0,
+		train = 30526,
 		anyschool = schools.holy,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.talent),
 	},
@@ -3837,7 +3837,7 @@ sc.spells = {
 		lvl_outdated = 17,
 		base_id = 1311649,
 		gcd = 1.5000001,
-		train = 300,
+		train = 315,
 		flags = bit.bor(0, spell_flags.instant, spell_flags.eval),
 	},
 	[407880] = {
