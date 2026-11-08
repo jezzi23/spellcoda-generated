@@ -1,6 +1,6 @@
 -- THIS FILE IS GENERATED
 local _, sc = ...;
-sc.addon_build_id = 3002;
+sc.addon_build_id = 3006;
 sc.client_name_src = "wowf";
 sc.client_version_src = "1.60.1.70862";
 _, sc.class = UnitClass("player");

@@ -660,12 +660,12 @@ sc.spells = {
 	},
 	[408343] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
+			min = 122,
+			max = 138,
+			var = 0.12244898,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 0.9,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -680,7 +680,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 8000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[5394] = {
 		periodic = {
@@ -712,12 +712,12 @@ sc.spells = {
 	},
 	[408345] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
+			min = 226,
+			max = 252,
+			var = 0.1097852,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 1.3,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -732,7 +732,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 27000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10537] = {
 		cast_time = 0,
@@ -1070,12 +1070,12 @@ sc.spells = {
 	},
 	[408341] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
+			min = 30,
+			max = 36,
+			var = 0.15384616,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 0.4,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -1090,7 +1090,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 800,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10447] = {
 		direct = {
@@ -1131,12 +1131,12 @@ sc.spells = {
 	},
 	[408342] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
+			min = 51,
+			max = 59,
+			var = 0.12844037,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 0.6,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -1151,7 +1151,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 3000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[8154] = {
 		cast_time = 0,
@@ -3827,12 +3827,12 @@ sc.spells = {
 	},
 	[408344] = {
 		direct = {
-			min = 5,
-			max = 5,
-			var = 0,
+			min = 168,
+			max = 190,
+			var = 0.12040134,
 			school1 = schools.fire,
-			coef = 0,
-			per_lvl = 0,
+			coef = 0.143,
+			per_lvl = 1.1,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -3847,7 +3847,7 @@ sc.spells = {
 		base_id = 408341,
 		gcd = 1.5000001,
 		train = 16000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10627] = {
 		cast_time = 0,
@@ -4377,7 +4377,7 @@ sc.talent_effects = {
 			{"ability", "effect_mod", 0.049999997, {324,}, 0, 0, 0.01, 85295},
 	},
 	[16038] = {
-			{"ability", "effect_mod", 0.14999999, {3599,8050,8190,408490,}, 0, 0, 0.01, 85218},
+			{"ability", "effect_mod", 0.14999999, {3599,8050,408341,8190,408490,}, 0, 0, 0.01, 85218},
 			{"ability", "effect_mod_ot", 0.14999999, {8050,}, 0, 1, 0.01, 85217},
 			{"ability", "extra_dur_flat", 9, {8050,}, 0, 2, 0.001, 126024},
 	},
@@ -4415,7 +4415,7 @@ sc.talent_effects = {
 			{"ability", "cost_mod", -0.02, {408681,8050,403,421,8056,8042,408490,}, 0, 0, 0.01, 85214},
 	},
 	[16089] = {
-			{"ability", "crit_mod", 1, {425339,408681,3599,8050,8033,403,421,324,8056,8042,8190,408490,}, 0, 0, 0.01, 85221},
+			{"ability", "crit_mod", 1, {425339,408681,3599,8050,8033,403,421,408341,324,8056,8042,8190,408490,}, 0, 0, 0.01, 85221},
 	},
 	[30812] = {
 			{"by_attr", "hp_of_stat_pct", 0.29999998, {4,}, 32, 0, 0.01, 85303},
@@ -4425,6 +4425,7 @@ sc.talent_effects = {
 			{"by_attr", "stat_mod", 0.02, {3,}, 32, 0, 0.01, 85301},
 	},
 	[16086] = {
+			{"ability", "effect_mod", 0.19999999, {408341,}, 0, 0, 0.01, 85223},
 			{"ability", "extra_dur_flat", 20, {8190,}, 0, 2, 0.001, 126023},
 	},
 	[16578] = {
@@ -4651,7 +4652,7 @@ sc.class_buffs = {
 			{"raw", "player_vuln_phys", 0, nil, 1, 1},
 	},
 	[1323418] = {
-			{"ability", "crit", 1, {408681,1064,403,421,8004,331,8042,8056,408490,}, 64, 0},
+			{"ability", "crit", 1, {408681,1064,403,421,8004,408341,331,8042,8056,408490,}, 64, 0},
 	},
 	[468526] = {
 			{"ability", "cast_mod", -1, {1064,}, 64, 0},
@@ -4681,7 +4682,7 @@ sc.class_buffs = {
 			{"raw", "attacker_melee_crit", -0.06, nil, 0, 4},
 	},
 	[1232096] = {
-			{"ability", "gcd_flat", -0.5, {425339,408681,8050,403,421,8056,8042,408490,}, 0, 0},
+			{"ability", "gcd_flat", -0.5, {425339,408681,8050,403,421,408341,8056,8042,408490,}, 0, 0},
 	},
 	[468460] = {
 			{"ability", "effect_mod", 1, {324,}, 0, 0},
@@ -4732,7 +4733,7 @@ sc.class_buffs = {
 			{"raw", "mp5_flat", 15, nil, 0, 0},
 	},
 	[16246] = {
-			{"ability", "cost_mod", -1, {408681,8050,403,421,8056,8042,408490,}, 64, 0},
+			{"ability", "cost_mod", -1, {408681,8050,403,421,408341,8056,8042,408490,}, 64, 0},
 	},
 	[28820] = {
 			{"raw", "mp5_flat", 15, nil, 0, 0},
@@ -8672,13 +8673,17 @@ local set_effects = {
 			{"ability", "effect_mod", 0.5, {408507,17364,}, 0, 0},
 	},
 	[1213902] = {
-			{"ability", "crit_mod", 0.59999996, {425339,408681,3599,8050,8033,403,421,324,8056,8042,8190,408490,}, 0, 0},
+			{"ability", "crit_mod", 0.59999996, {425339,408681,3599,8050,8033,403,421,408341,324,8056,8042,8190,408490,}, 0, 0},
 	},
 	[26122] = {
 			{"ability", "cast_mod_flat", -0.4, {1064,}, 0, 0},
 	},
 	[26123] = {
 			{"ability", "jump_amp", 0.049999997, {421,}, 0, 0},
+	},
+	[1226986] = {
+			{"ability", "extra_dur", -0.98999995, {408341,}, 0, 2},
+			{"ability", "cost_mod", -0.59999996, {408341,}, 0, 4},
 	},
 	[23573] = {
 			{"ability", "jumps_flat", 3, {331,}, 0, 0},
@@ -8758,7 +8763,7 @@ local enchant_effects = {
 			{"ability", "extra_dur_flat", 6.0000005, {8050,}, 0, 4},
 	},
 	[1213902] = {
-			{"ability", "crit_mod", 0.59999996, {425339,408681,3599,8050,8033,403,421,324,8056,8042,8190,408490,}, 0, 0},
+			{"ability", "crit_mod", 0.59999996, {425339,408681,3599,8050,8033,403,421,408341,324,8056,8042,8190,408490,}, 0, 0},
 	},
 	[15567] = {
 			{"raw", "ap_flat", 58, nil, 2, 0},
