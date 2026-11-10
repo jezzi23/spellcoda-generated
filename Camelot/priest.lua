@@ -212,7 +212,7 @@ sc.spells = {
 		lvl_outdated = 39,
 		base_id = 1277324,
 		gcd = 1.5000001,
-		train = 150,
+		train = 6315,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.resource_regen),
 	},
 	[6076] = {
@@ -600,7 +600,7 @@ sc.spells = {
 		lvl_outdated = 49,
 		base_id = 1277331,
 		gcd = 1.5000001,
-		train = 526,
+		train = 13684,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[9484] = {
@@ -905,7 +905,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 30000,
+		train = 21052,
 		flags = bit.bor(0, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		healing_version = {
 		direct = {
@@ -943,7 +943,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 30000,
+		train = 21052,
 		beneficiary_id = 402277,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		},
@@ -985,7 +985,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 6346,
 		gcd = 1.5000001,
-		train = 300,
+		train = 2210,
 		anyschool = schools.holy,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant),
 	},
@@ -1694,7 +1694,7 @@ sc.spells = {
 		lvl_outdated = 49,
 		base_id = 1277324,
 		gcd = 1.5000001,
-		train = 500,
+		train = 13684,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.resource_regen),
 	},
 	[18807] = {
@@ -2310,7 +2310,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1277331,
 		gcd = 1.5000001,
-		train = 1578,
+		train = 29473,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[10060] = {
@@ -2615,7 +2615,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 46000,
+		train = 29473,
 		flags = bit.bor(0, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		healing_version = {
 		direct = {
@@ -2653,7 +2653,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 46000,
+		train = 29473,
 		beneficiary_id = 402277,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		},
@@ -2887,7 +2887,7 @@ sc.spells = {
 		lvl_outdated = 55,
 		base_id = 1309595,
 		gcd = 1.5000001,
-		train = 28000,
+		train = 18947,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[600] = {
@@ -3504,7 +3504,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 401859,
 		gcd = 1.5000001,
-		train = 30000,
+		train = 21052,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.talent),
 	},
 	[19266] = {
@@ -3556,7 +3556,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1277324,
 		gcd = 1.5000001,
-		train = 1500,
+		train = 30526,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.resource_regen),
 	},
 	[10900] = {
@@ -4232,7 +4232,7 @@ sc.spells = {
 		lvl_outdated = 49,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 16000,
+		train = 13684,
 		flags = bit.bor(0, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		healing_version = {
 		direct = {
@@ -4270,7 +4270,7 @@ sc.spells = {
 		lvl_outdated = 49,
 		base_id = 402174,
 		gcd = 1.5000001,
-		train = 16000,
+		train = 13684,
 		beneficiary_id = 402277,
 		flags = bit.bor(0, spell_flags.heal, spell_flags.channel, spell_flags.cd, spell_flags.eval, spell_flags.talent),
 		},
@@ -4500,7 +4500,7 @@ sc.spells = {
 		lvl_outdated = 47,
 		base_id = 1309595,
 		gcd = 1.5000001,
-		train = 18000,
+		train = 13684,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[10960] = {
@@ -4929,7 +4929,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 1277331,
 		gcd = 1.5000001,
-		train = 947,
+		train = 21052,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[6075] = {
@@ -5264,7 +5264,7 @@ sc.spells = {
 		lvl_outdated = 59,
 		base_id = 1277324,
 		gcd = 1.5000001,
-		train = 900,
+		train = 21052,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.resource_regen),
 	},
 	[970] = {
@@ -5628,7 +5628,7 @@ sc.spells = {
 		lvl_outdated = 27,
 		base_id = 2944,
 		gcd = 1.5000001,
-		train = 300,
+		train = 2210,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[10947] = {
@@ -5676,7 +5676,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 1309595,
 		gcd = 1.5000001,
-		train = 42000,
+		train = 27368,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[602] = {
@@ -6086,7 +6086,7 @@ sc.spells = {
 		lvl_outdated = 39,
 		base_id = 14752,
 		gcd = 1.5000001,
-		train = 10000,
+		train = 5894,
 		anyschool = schools.holy,
 		flags = bit.bor(0, spell_flags.instant),
 	},
@@ -6335,7 +6335,7 @@ sc.spells = {
 		lvl_outdated = 60,
 		base_id = 401859,
 		gcd = 1.5000001,
-		train = 46000,
+		train = 29473,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.talent),
 	},
 	[17313] = {
@@ -6529,7 +6529,7 @@ sc.spells = {
 		lvl_outdated = 39,
 		base_id = 1277331,
 		gcd = 1.5000001,
-		train = 157,
+		train = 5894,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[21562] = {
@@ -6567,7 +6567,7 @@ sc.spells = {
 		lvl_outdated = 39,
 		base_id = 1309595,
 		gcd = 1.5000001,
-		train = 11000,
+		train = 8421,
 		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
 	},
 	[425284] = {
