@@ -363,11 +363,11 @@ sc.spells = {
 	[7801] = {
 		direct = {
 			min = 16,
-			max = 18,
-			var = 0.11428571,
+			max = 20,
+			var = 0.22222218,
 			school1 = schools.fire,
 			coef = 0.571,
-			per_lvl = 0.3,
+			per_lvl = 0.4,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -541,12 +541,12 @@ sc.spells = {
 	},
 	[3110] = {
 		direct = {
-			min = 3,
-			max = 5,
-			var = 0.2857143,
+			min = 5,
+			max = 7,
+			var = 0.3333334,
 			school1 = schools.fire,
 			coef = 0.164,
-			per_lvl = 0.1,
+			per_lvl = 0.3,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -1142,14 +1142,14 @@ sc.spells = {
 	},
 	[1316697] = {
 		periodic = {
-			min = 36,
-			max = 36,
+			min = 25,
+			max = 25,
 			var = 0,
 			tick_time = 1,
 			dur = 6.0000005,
 			school1 = schools.shadow,
-			coef = 0.286,
-			per_lvl = 2.5,
+			coef = 0.2002,
+			per_lvl = 1.75,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0, comp_flags.periodic),
@@ -2581,7 +2581,7 @@ sc.spells = {
 		lvl_learn = 30,
 		lvl_outdated = 60,
 		base_id = 1225228,
-		gcd = 0,
+		gcd = 1.5000001,
 		train = 0,
 		anyschool = schools.physical,
 		flags = bit.bor(0, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.talent),
@@ -3015,12 +3015,12 @@ sc.spells = {
 	},
 	[7799] = {
 		direct = {
-			min = 6,
-			max = 8,
-			var = 0.15384616,
+			min = 10,
+			max = 12,
+			var = 0.18181822,
 			school1 = schools.fire,
 			coef = 0.314,
-			per_lvl = 0.2,
+			per_lvl = 0.4,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -3733,12 +3733,12 @@ sc.spells = {
 	},
 	[7800] = {
 		direct = {
-			min = 11,
-			max = 13,
-			var = 0.16666667,
+			min = 13,
+			max = 17,
+			var = 0.23529415,
 			school1 = schools.fire,
 			coef = 0.529,
-			per_lvl = 0.3,
+			per_lvl = 0.4,
 			per_lvl_sq = 0,
 			jump_amp = 1,
 			flags = bit.bor(0),
@@ -6291,9 +6291,6 @@ local class_hostile_buffs = {
 	},
 	[403650] = {
 			{"ability", "vuln_mod", 0.5, {1949,348,403629,5676,6353,5740,412758,1293817,460692,}, 5, 0},
-	},
-	[1316697] = {
-			{"ability", "vuln_mod", 0.099999994, {980,172,}, 5, 1},
 	},
 	[427726] = {
 			{"by_school", "vuln_mod", -0.099999994, {1,2,3,4,5,6,7,}, 1, 1},
