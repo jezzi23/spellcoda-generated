@@ -1,6 +1,6 @@
 -- THIS FILE IS GENERATED
 local _, sc = ...;
-sc.addon_build_id = 3015;
+sc.addon_build_id = 3022;
 sc.client_name_src = "wowf";
 sc.client_version_src = "1.60.1.70888";
 _, sc.class = UnitClass("player");
@@ -48,6 +48,39 @@ sc.aura_idx_flags = 5;
 sc.aura_idx_iid = 6;
 sc.aura_idx_scale = 7;
 sc.aura_idx_curve = 8;
+sc.trainer_factions = {
+	{role = "WARRIOR", side = "Alliance", factions = {47,54,69,72,}},
+	{role = "WARRIOR", side = "Horde", factions = {68,76,81,}},
+	{role = "PALADIN", side = "Alliance", factions = {47,72,}},
+	{role = "PALADIN", side = "Horde", factions = {68,}},
+	{role = "HUNTER", side = "Alliance", factions = {47,69,72,}},
+	{role = "HUNTER", side = "Horde", factions = {76,81,530,}},
+	{role = "ROGUE", side = "Alliance", factions = {21,47,54,69,72,349,}},
+	{role = "ROGUE", side = "Horde", factions = {21,68,76,81,349,530,}},
+	{role = "PRIEST", side = "Alliance", factions = {47,54,69,72,}},
+	{role = "PRIEST", side = "Horde", factions = {68,76,530,}},
+	{role = "SHAMAN", side = "Alliance", factions = {47,}},
+	{role = "SHAMAN", side = "Horde", factions = {76,81,2787,}},
+	{role = "MAGE", side = "Alliance", factions = {47,54,69,72,2740,}},
+	{role = "MAGE", side = "Horde", factions = {68,76,530,}},
+	{role = "WARLOCK", side = "Alliance", factions = {47,54,72,}},
+	{role = "WARLOCK", side = "Horde", factions = {68,76,}},
+	{role = "DRUID", side = "Alliance", factions = {69,72,609,2740,}},
+	{role = "DRUID", side = "Horde", factions = {81,609,2787,}},
+	{role = "PET", side = "Alliance", factions = {47,69,72,}},
+	{role = "PET", side = "Horde", factions = {76,81,}},
+};
+sc.rep_discount_pct = {[5] = 0, [6] = 10, [7] = 10, [8] = 10};
+sc.weapon_masters = {
+	{npc = 11867, name = "Woo Ping", side = "Alliance", area = 1519, faction = 72, skills = {5011,1180,201,200,227,202,}},
+	{npc = 11865, name = "Buliwyf Stonehand", side = "Alliance", area = 1537, faction = 47, skills = {196,197,198,199,266,15590,}},
+	{npc = 13084, name = "Bixi Wobblebonk", side = "Alliance", area = 1537, faction = 47, skills = {1180,2567,5011,}},
+	{npc = 11866, name = "Ilyenia Moonfire", side = "Alliance", area = 1657, faction = 69, skills = {264,1180,15590,227,2567,}},
+	{npc = 2704, name = "Hanashi", side = "Horde", area = 1637, faction = 530, skills = {264,196,197,227,2567,}},
+	{npc = 11868, name = "Sayoc", side = "Horde", area = 1637, faction = 76, skills = {264,1180,15590,196,197,2567,}},
+	{npc = 11869, name = "Ansekhwa", side = "Horde", area = 1638, faction = 81, skills = {266,198,199,227,}},
+	{npc = 11870, name = "Archibald", side = "Horde", area = 1497, faction = 68, skills = {5011,1180,201,200,202,}},
+};
 sc.races = {
 	human = 1,
 	orc = 2,
@@ -168,6 +201,8 @@ sc.spell_flags = {
 	requires_ranged_slot = bit.lshift(1, 24),
 	ot_haste_improved = bit.lshift(1, 25),
 	ehp = bit.lshift(1, 26),
+	weapon_skill = bit.lshift(1, 27),
+	quest = bit.lshift(1, 28),
 };
 sc.comp_flags = {
 	cant_crit = bit.lshift(1, 0),
@@ -192,6 +227,8 @@ sc.comp_flags = {
 	weapon_pct = bit.lshift(1, 19),
 	coef_applied_to_avg_weapon_dmg = bit.lshift(1, 20),
 	no_coef = bit.lshift(1, 21),
+	school_sp_scaling = bit.lshift(1, 22),
+	per_swing = bit.lshift(1, 23),
 };
 sc.aura_flags = {
 	mul = bit.lshift(1, 0),
