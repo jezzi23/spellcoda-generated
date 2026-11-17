@@ -3585,8 +3585,8 @@ sc.spells = {
 		direct = {
 			base_min = 0,
 			base_max = 0,
-			min = 1.5,
-			max = 1.5,
+			min = 1,
+			max = 1,
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
@@ -4821,10 +4821,6 @@ sc.class_buffs = {
 	[5677] = {
 			{"raw", "mp5_flat", 10, nil, 0, 0},
 	},
-	[10610] = {
-			{"raw", "ap_flat", 246, nil, 66, 0},
-			{"raw", "extra_hits_flat", 1, nil, 64, 1},
-	},
 	[16188] = {
 			{"ability", "cast_mod", -1, {1064,415236,403,421,8004,331,}, 64, 0},
 	},
@@ -4949,20 +4945,12 @@ sc.class_buffs = {
 	[1233835] = {
 			{"ability", "effect_mod", 0.099999994, {408490,}, 64, 0},
 	},
-	[8516] = {
-			{"raw", "ap_flat", 95, nil, 66, 0},
-			{"raw", "extra_hits_flat", 1, nil, 64, 1},
-	},
 	[470272] = {
 			{"ability", "cast_mod", -0.19999999, {421,}, 64, 0},
 			{"ability", "effect_mod", 0.19999999, {421,}, 64, 2},
 	},
 	[17360] = {
 			{"raw", "mp5_flat", 328.3333, nil, 0, 0},
-	},
-	[10608] = {
-			{"raw", "ap_flat", 179, nil, 66, 0},
-			{"raw", "extra_hits_flat", 1, nil, 64, 1},
 	},
 };
 local class_hostile_buffs = {
