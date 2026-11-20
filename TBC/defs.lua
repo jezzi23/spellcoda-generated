@@ -1,6 +1,6 @@
 -- THIS FILE IS GENERATED
 local _, sc = ...;
-sc.addon_build_id = 3028;
+sc.addon_build_id = 3029;
 sc.client_name_src = "wow_anniversary";
 sc.client_version_src = "2.5.6.70577";
 _, sc.class = UnitClass("player");
@@ -48,27 +48,30 @@ sc.aura_idx_flags = 5;
 sc.aura_idx_iid = 6;
 sc.aura_idx_scale = 7;
 sc.aura_idx_curve = 8;
+sc.aura_idx_per_lvl = 9;
+sc.aura_idx_lvl_min = 10;
+sc.aura_idx_lvl_max = 11;
 sc.trainer_factions = {
-	{role = "WARRIOR", side = "Alliance", factions = {47,54,69,72,930,}},
-	{role = "WARRIOR", side = "Horde", factions = {68,76,81,}},
-	{role = "PALADIN", side = "Alliance", factions = {47,72,930,}},
-	{role = "PALADIN", side = "Horde", factions = {911,}},
-	{role = "HUNTER", side = "Alliance", factions = {47,69,72,930,}},
-	{role = "HUNTER", side = "Horde", factions = {76,81,530,911,}},
-	{role = "ROGUE", side = "Alliance", factions = {21,47,54,69,72,349,}},
-	{role = "ROGUE", side = "Horde", factions = {21,68,76,349,530,911,}},
-	{role = "PRIEST", side = "Alliance", factions = {47,69,72,930,}},
-	{role = "PRIEST", side = "Horde", factions = {68,76,530,911,}},
-	{role = "SHAMAN", side = "Alliance", factions = {930,}},
-	{role = "SHAMAN", side = "Horde", factions = {76,81,}},
-	{role = "MAGE", side = "Alliance", factions = {47,54,69,72,930,}},
-	{role = "MAGE", side = "Horde", factions = {68,76,530,911,}},
-	{role = "WARLOCK", side = "Alliance", factions = {47,54,72,}},
-	{role = "WARLOCK", side = "Horde", factions = {68,76,911,}},
-	{role = "DRUID", side = "Alliance", factions = {69,72,609,930,}},
-	{role = "DRUID", side = "Horde", factions = {81,609,911,}},
-	{role = "PET", side = "Alliance", factions = {47,69,930,}},
-	{role = "PET", side = "Horde", factions = {76,81,911,}},
+	{role = "WARRIOR", side = "Alliance", factions = {47,69,72,930,}, places = {{faction = 54, area = 1537},}},
+	{role = "WARRIOR", side = "Horde", factions = {68,76,81,}, places = {}},
+	{role = "PALADIN", side = "Alliance", factions = {47,72,930,}, places = {}},
+	{role = "PALADIN", side = "Horde", factions = {911,}, places = {}},
+	{role = "HUNTER", side = "Alliance", factions = {47,69,72,930,}, places = {}},
+	{role = "HUNTER", side = "Horde", factions = {76,81,530,911,}, places = {}},
+	{role = "ROGUE", side = "Alliance", factions = {21,47,69,72,349,}, places = {{faction = 54, area = 1537},}},
+	{role = "ROGUE", side = "Horde", factions = {21,68,76,349,530,911,}, places = {}},
+	{role = "PRIEST", side = "Alliance", factions = {47,69,72,930,}, places = {}},
+	{role = "PRIEST", side = "Horde", factions = {68,76,530,911,}, places = {{faction = 68, area = 1638},}},
+	{role = "SHAMAN", side = "Alliance", factions = {930,}, places = {}},
+	{role = "SHAMAN", side = "Horde", factions = {76,81,}, places = {}},
+	{role = "MAGE", side = "Alliance", factions = {47,69,72,930,}, places = {{faction = 54, area = 1537},}},
+	{role = "MAGE", side = "Horde", factions = {68,76,530,911,}, places = {{faction = 68, area = 1638},}},
+	{role = "WARLOCK", side = "Alliance", factions = {47,72,}, places = {{faction = 54, area = 1537},}},
+	{role = "WARLOCK", side = "Horde", factions = {68,76,911,}, places = {}},
+	{role = "DRUID", side = "Alliance", factions = {69,72,609,930,}, places = {}},
+	{role = "DRUID", side = "Horde", factions = {81,609,911,}, places = {}},
+	{role = "PET", side = "Alliance", factions = {47,69,930,}, places = {}},
+	{role = "PET", side = "Horde", factions = {76,81,911,}, places = {}},
 };
 sc.rep_discount_pct = {[5] = 5, [6] = 10, [7] = 15, [8] = 20};
 sc.weapon_masters = {
@@ -161,6 +164,7 @@ sc.spell_flags = {
 	ehp = bit.lshift(1, 26),
 	weapon_skill = bit.lshift(1, 27),
 	quest = bit.lshift(1, 28),
+	heals_caster = bit.lshift(1, 29),
 };
 sc.comp_flags = {
 	cant_crit = bit.lshift(1, 0),
@@ -187,6 +191,7 @@ sc.comp_flags = {
 	no_coef = bit.lshift(1, 21),
 	school_sp_scaling = bit.lshift(1, 22),
 	per_swing = bit.lshift(1, 23),
+	per_wpn_speed = bit.lshift(1, 24),
 };
 sc.aura_flags = {
 	mul = bit.lshift(1, 0),
@@ -198,6 +203,7 @@ sc.aura_flags = {
 	stacks_as_charges = bit.lshift(1, 6),
 	weapon_slot_dependent = bit.lshift(1, 7),
 	requires_feral_shapeshift = bit.lshift(1, 8),
+	not_in_raid = bit.lshift(1, 9),
 };
 sc.feral_skill_as_wpn_subclass_hack = 28;
 sc.wep_subclass_to_normalized_speed = {
