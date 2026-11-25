@@ -914,7 +914,7 @@ sc.spells = {
 			per_combo_lvl_sq = 0.051973,
 			per_resource = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.applies_ranged),
+			flags = bit.bor(0),
 		},
 		cast_time = -1000.00006,
 		cost = 35,
@@ -2029,8 +2029,8 @@ sc.spells = {
 	},
 	[425012] = {
 		direct = {
-			min = 5,
-			max = 5,
+			min = 1,
+			max = 1,
 			var = 0,
 			school1 = schools.physical,
 			coef = 0,
@@ -4211,12 +4211,6 @@ sc.class_buffs = {
 	[8649] = {
 			{"by_school", "res_flat", 0, {1,}, 2, 0},
 	},
-	[11354] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[13222] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[400012] = {
 			{"raw", "parry", 0.099999994, nil, 2, 1},
 			{"raw", "player_vuln_phys", 0, nil, 1, 2},
@@ -4227,31 +4221,17 @@ sc.class_buffs = {
 	[28815] = {
 			{"ability", "crit", 1, {53,399956,1752,398196,424919,424785,16511,462709,}, 64, 0},
 	},
-	[13218] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[8692] = {
 			{"raw", "cast_haste", -0.5, nil, 1, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[408699] = {
 			{"raw", "melee_haste", -0.099999994, nil, 33, 0},
 	},
-	[25349] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[14149] = {
 			{"ability", "crit", 0.39999998, {53,399956,462718,14278,1752,398196,8676,424919,424785,462709,}, 64, 0},
 	},
-	[462286] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[11398] = {
 			{"raw", "cast_haste", -0.59999996, nil, 1, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[13224] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[21878] = {
 			{"raw", "dodge", 0.5, nil, 2, 0},
@@ -4265,26 +4245,8 @@ sc.class_buffs = {
 	[8647] = {
 			{"by_school", "res_flat", 0, {1,}, 2, 0},
 	},
-	[3409] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[25809] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[11197] = {
 			{"by_school", "res_flat", 0, {1,}, 2, 0},
-	},
-	[14795] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[11201] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[2819] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[2818] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[15087] = {
 			{"raw", "dodge", 0.5, nil, 2, 0},
@@ -4308,13 +4270,8 @@ sc.class_buffs = {
 	[439471] = {
 			{"by_school", "res_flat", -1700, {1,}, 2, 0},
 	},
-	[458820] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-			{"raw", "class_misc", 1, nil, 0, 1},
-	},
 	[25810] = {
 			{"raw", "cast_haste", -0.5, nil, 1, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[457469] = {
 			{"raw", "player_vuln_phys", -0.19999999, nil, 65, 0},
@@ -4325,21 +4282,11 @@ sc.class_buffs = {
 	[8643] = {
 			{"raw", "player_vuln_phys", 0, nil, 1, 2},
 	},
-	[1214170] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-			{"raw", "class_misc", 1, nil, 0, 1},
-	},
-	[434316] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[398198] = {
 			{"raw", "parry", 0.099999994, nil, 2, 1},
 	},
 	[5277] = {
 			{"raw", "dodge", 0.5, nil, 2, 0},
-	},
-	[13223] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[6774] = {
 			{"raw", "melee_haste", 0.29999998, nil, 33, 1},
@@ -4350,16 +4297,6 @@ sc.class_buffs = {
 	},
 	[5760] = {
 			{"raw", "cast_haste", -0.39999998, nil, 1, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[25348] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[434314] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[11353] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[14143] = {
 			{"ability", "crit", 0.19999999, {53,399956,462718,14278,1752,398196,8676,424919,424785,462709,}, 64, 0},
@@ -4381,10 +4318,6 @@ sc.class_buffs = {
 	},
 	[439473] = {
 			{"raw", "ap_flat", -205, nil, 2, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
-	[434312] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[400015] = {
 			{"raw", "hp_mod", 0.049999997, nil, 32, 0},
@@ -4395,7 +4328,6 @@ sc.class_buffs = {
 	},
 	[439472] = {
 			{"raw", "melee_haste", -0.19999999, nil, 33, 0},
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[462752] = {
 			{"ability", "cost_mod_flat", -20, {1752,398196,}, 0, 0},
@@ -4405,14 +4337,8 @@ sc.class_buffs = {
 	[28107] = {
 			{"aura_pts", 1, 0.06, {6774,5171,}, 0, 0},
 	},
-	[434313] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
-	},
 	[1785] = {
 			{"applies_aura", "shapeshift_passives", 0, {}, 16, 0},
-	},
-	[434315] = {
-			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[16321] = {
 			{"raw", "dodge", 0.049999997, nil, 2, 0},
@@ -4425,6 +4351,12 @@ local class_hostile_buffs = {
 	[8649] = {
 			{"by_school", "target_res_flat", 0, {1,}, 0, 0},
 	},
+	[11354] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[13222] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
 	[400012] = {
 			{"raw", "vuln_phys", 0, nil, 1, 2},
 	},
@@ -4432,17 +4364,50 @@ local class_hostile_buffs = {
 			{"by_school", "vuln_mod", 0, {1,2,3,4,5,6,7,}, 1, 2},
 			{"raw", "vuln_phys", 0, nil, 1, 2},
 	},
+	[13218] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[8692] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[25349] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
 	[462286] = {
 			{"by_school", "vuln_mod", 0.04, {3,4,5,6,7,}, 1, 0},
 	},
+	[11398] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[13224] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
 	[8647] = {
 			{"by_school", "target_res_flat", 0, {1,}, 0, 0},
+	},
+	[3409] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[25809] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[11197] = {
 			{"by_school", "target_res_flat", 0, {1,}, 0, 0},
 	},
 	[17347] = {
 			{"wpn_subclass", "phys_dmg_flat", 5, {173555}, 72, 2},
+	},
+	[14795] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[11201] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[2819] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[2818] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[424785] = {
 			{"ability", "vuln_mod", 0.5, {1752,424785,}, 5, 4},
@@ -4452,6 +4417,13 @@ local class_hostile_buffs = {
 	},
 	[439471] = {
 			{"by_school", "target_res_flat", -1700, {1,}, 0, 0},
+	},
+	[458820] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+			{"raw", "class_misc", 1, nil, 0, 1},
+	},
+	[25810] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[457469] = {
 			{"raw", "vuln_phys", -0.19999999, nil, 65, 0},
@@ -4463,11 +4435,46 @@ local class_hostile_buffs = {
 			{"by_school", "vuln_mod", 0, {1,2,3,4,5,6,7,}, 1, 2},
 			{"raw", "vuln_phys", 0, nil, 1, 2},
 	},
+	[1214170] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+			{"raw", "class_misc", 1, nil, 0, 1},
+	},
+	[434316] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[399963] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[13223] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[5760] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[25348] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
 	[17348] = {
 			{"wpn_subclass", "phys_dmg_flat", 7, {173555}, 72, 2},
 	},
+	[434314] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[11353] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
 	[8650] = {
 			{"by_school", "target_res_flat", 0, {1,}, 0, 0},
+	},
+	[2094] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+			{"raw", "class_misc", 1, nil, 0, 1},
+	},
+	[439473] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[434312] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 	[16511] = {
 			{"wpn_subclass", "phys_dmg_flat", 3, {173555}, 72, 2},
@@ -4475,6 +4482,15 @@ local class_hostile_buffs = {
 	[449927] = {
 			{"by_school", "sp_dmg_flat", 7, {1,2,3,4,5,6,7,}, 64, 0},
 			{"raw", "phys_dmg_flat", 7, nil, 64, 0},
+	},
+	[439472] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[434313] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
+	},
+	[434315] = {
+			{"raw", "class_misc", 1, nil, 0, 0},
 	},
 };
 for k, v in pairs(class_hostile_buffs) do sc.hostile_buffs[k] = v; end
@@ -4495,6 +4511,7 @@ local class_friendly_buffs = {
 for k, v in pairs(class_friendly_buffs) do sc.friendly_buffs[k] = v; end
 local class_aura_info = {
 	[408] = {dur = 0, dur_per_cp = 1},
+	[2094] = {dur = 10},
 	[2818] = {dur = 12, stacks = 5},
 	[2819] = {dur = 12, stacks = 5},
 	[3409] = {dur = 12},
@@ -4535,6 +4552,7 @@ local class_aura_info = {
 	[25810] = {dur = 12},
 	[28815] = {charges = 1},
 	[398198] = {dur = 5, dur_per_cp = 5},
+	[399963] = {dur = 1, dur_per_cp = 1},
 	[400012] = {dur = 10, dur_per_cp = 4},
 	[400015] = {dur = 30, stacks = 5},
 	[408699] = {dur = 8},
