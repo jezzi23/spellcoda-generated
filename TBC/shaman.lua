@@ -3904,7 +3904,7 @@ sc.spells = {
 			per_lvl_sq = 0,
 			jumps = 4,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 0.03,
@@ -5038,9 +5038,11 @@ sc.talent_effects = {
 	},
 	[16301] = {
 			{"raw", "block", 0.049999997, nil, 2, 0},
+			{"raw", "block_value_mod", 0.25, nil, 33, 1},
 	},
 	[16299] = {
 			{"raw", "block", 0.03, nil, 2, 0},
+			{"raw", "block_value_mod", 0.14999999, nil, 33, 1},
 	},
 	[16220] = {
 			{"ability", "crit", 0.04, {1064,45297,403,421,8004,324,331,}, 0, 0},
@@ -5106,6 +5108,7 @@ sc.talent_effects = {
 	},
 	[16253] = {
 			{"raw", "block", 0.01, nil, 2, 0},
+			{"raw", "block_value_mod", 0.049999997, nil, 33, 1},
 	},
 	[16273] = {
 			{"raw", "dodge", 0.04, nil, 2, 0},
@@ -5127,6 +5130,7 @@ sc.talent_effects = {
 	},
 	[16300] = {
 			{"raw", "block", 0.04, nil, 2, 0},
+			{"raw", "block_value_mod", 0.19999999, nil, 33, 1},
 	},
 	[16205] = {
 			{"ability", "effect_mod_ot", 0.099999994, {5394,}, 0, 0},
@@ -5228,6 +5232,7 @@ sc.talent_effects = {
 	},
 	[16298] = {
 			{"raw", "block", 0.02, nil, 2, 0},
+			{"raw", "block_value_mod", 0.099999994, nil, 33, 1},
 	},
 	[30813] = {
 			{"ability", "cost_mod", -0.04, {3599,8050,8033,17364,16190,974,1535,5394,324,8056,8042,8190,5675,}, 0, 0},
@@ -7452,7 +7457,7 @@ local set_bonuses = {
 	[588] = {{2,40050},},
 	[701] = {{2,41464},},
 	[583] = {{2,32145},},
-	[209] = {{8,23561},},
+	[209] = {{3,23562},{8,23561},},
 	[580] = {{2,40042},},
 	[480] = {{2,41718},{5,24483},},
 	[216] = {{3,21899},{5,23570},},

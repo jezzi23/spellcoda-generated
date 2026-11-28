@@ -1556,7 +1556,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 390,
@@ -1609,7 +1609,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 505,
@@ -1699,7 +1699,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 205,
@@ -1777,7 +1777,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 120,
@@ -2909,7 +2909,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 290,
@@ -3973,7 +3973,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic, comp_flags.dot_resi_pen),
+			flags = bit.bor(0, comp_flags.cant_crit, comp_flags.periodic),
 		},
 		cast_time = 0,
 		cost = 660,
@@ -4260,6 +4260,9 @@ sc.talent_effects = {
 	[20103] = {
 			{"ability", "cost_mod", -0.089999996, {348704,20165,31892,20375,21082,21084,20166,20154,}, 0, 0},
 	},
+	[20148] = {
+			{"raw", "block_value_mod", 0.099999994, nil, 33, 0},
+	},
 	[31883] = {
 			{"ability", "crit", 0.14999999, {348704,31892,20375,21084,20154,}, 0, 0},
 			{"by_school", "threat", -0.29999998, {1,2,3,4,5,6,7,}, 0, 1},
@@ -4344,6 +4347,9 @@ sc.talent_effects = {
 	[31880] = {
 			{"ability", "crit", 0.06, {348704,31892,20375,21084,20154,}, 0, 0},
 			{"by_school", "threat", -0.12, {1,2,3,4,5,6,7,}, 0, 1},
+	},
+	[20150] = {
+			{"raw", "block_value_mod", 0.29999998, nil, 33, 0},
 	},
 	[31849] = {
 			{"aura_pts", -1, -1, {1020,642,}, 0, 1},
@@ -4554,6 +4560,9 @@ sc.talent_effects = {
 	},
 	[20263] = {
 			{"by_attr", "stat_mod", 0.04, {1,}, 32, 0},
+	},
+	[20149] = {
+			{"raw", "block_value_mod", 0.19999999, nil, 33, 0},
 	},
 	[20104] = {
 			{"ability", "cost_mod", -0.12, {348704,20165,31892,20375,21082,21084,20166,20154,}, 0, 0},
@@ -4830,6 +4839,9 @@ sc.class_buffs = {
 	[27143] = {
 			{"raw", "mp5_flat", 41, nil, 0, 0},
 	},
+	[37523] = {
+			{"raw", "block_value_flat", 100, nil, 66, 0},
+	},
 	[20054] = {
 			{"by_school", "dmg_mod", 0.04, {1,2,}, 1, 0},
 	},
@@ -4895,6 +4907,9 @@ sc.class_buffs = {
 	},
 	[37723] = {
 			{"ability", "cost_mod_flat", -450, {635,19750,}, 64, 0},
+	},
+	[37193] = {
+			{"raw", "block_value_flat", 100, nil, 66, 0},
 	},
 	[40803] = {
 			{"raw", "cast_haste", -4, nil, 1, 2},
@@ -5032,6 +5047,8 @@ local class_aura_info = {
 	[32777] = {dur = 10, charges = 4},
 	[33564] = {dur = 30},
 	[36886] = {dur = 8},
+	[37193] = {dur = 6, charges = 1},
+	[37523] = {dur = 6, charges = 1},
 	[37723] = {dur = 15, charges = 1},
 	[37879] = {dur = 15},
 	[43837] = {dur = 10, charges = 1},
@@ -6682,7 +6699,7 @@ local set_bonuses = {
 	[588] = {{2,40050},},
 	[701] = {{2,41464},},
 	[583] = {{2,32145},},
-	[209] = {{8,23561},},
+	[209] = {{3,23562},{8,23561},},
 	[580] = {{2,40042},},
 	[480] = {{2,41718},{5,24483},},
 	[216] = {{3,21899},{5,23570},},

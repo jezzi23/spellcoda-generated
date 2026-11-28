@@ -812,7 +812,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[20165] = {
 		periodic = {
@@ -1976,7 +1976,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[20287] = {
 		periodic = {
@@ -2041,7 +2041,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[25780] = {
 		cast_time = 0,
@@ -4114,7 +4114,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[680] = {
 		direct = {
@@ -4188,7 +4188,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[20423] = {
 		periodic = {
@@ -4306,7 +4306,7 @@ sc.spells = {
 		base_id = 415068,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[20920] = {
 		periodic = {
@@ -4705,6 +4705,9 @@ sc.talent_effects = {
 	[20101] = {
 			{"ability", "cost_mod", -0.099999994, {415068,679,20165,1311606,407798,20375,1311605,20187,1311015,21082,19742,20467,21084,20166,26573,1311649,20271,4987,25894,20154,879,}, 1, 0, 0.01, 82990},
 	},
+	[20150] = {
+			{"raw", "block_value_mod", 0.29999998, nil, 33, 0, 0.01, 110326},
+	},
 	[20189] = {
 			{"raw", "phys_hit", 0.01, nil, 0, 0, 0.01, 82958},
 			{"by_school", "spell_hit", 0.01, {1,2,3,4,5,6,7,}, 2, 1, 0.01, 104822},
@@ -4985,6 +4988,9 @@ sc.class_buffs = {
 			{"raw", "ap_flat", 94, nil, 2, 0, nil, nil, 1.7, 22, 30},
 			{"raw", "melee_haste", 0.39999998, nil, 33, 1},
 	},
+	[1226466] = {
+			{"raw", "block_value_mod", 1, nil, 33, 0},
+	},
 	[465] = {
 			{"by_school", "res_flat", 55, {1,}, 2, 0},
 	},
@@ -5009,6 +5015,9 @@ sc.class_buffs = {
 	},
 	[10293] = {
 			{"by_school", "res_flat", 735, {1,}, 2, 0},
+	},
+	[1233525] = {
+			{"raw", "block_value_mod", 0.29999998, nil, 33, 0},
 	},
 	[10291] = {
 			{"by_school", "res_flat", 390, {1,}, 2, 0},
@@ -5068,6 +5077,9 @@ sc.class_buffs = {
 	},
 	[1311033] = {
 			{"raw", "player_vuln_phys", 0, nil, 1, 0},
+	},
+	[1306749] = {
+			{"raw", "block_value_mod", 0.29999998, nil, 33, 0},
 	},
 	[458371] = {
 			{"raw", "player_vuln_phys", -0.5, nil, 1, 0},
@@ -5310,9 +5322,12 @@ local class_aura_info = {
 	[1226451] = {dur = 30, charges = 5},
 	[1226461] = {dur = 15, stacks = 3},
 	[1226464] = {dur = 10},
+	[1226466] = {dur = 6},
+	[1233525] = {dur = 35},
 	[1239570] = {dur = 10, charges = 4},
 	[1262310] = {dur = 120},
 	[1280353] = {dur = 0.6},
+	[1306749] = {dur = 10},
 	[1311033] = {dur = 6},
 	[1311649] = {dur = 30},
 	[1311656] = {dur = 30},
@@ -8476,7 +8491,7 @@ local set_bonuses = {
 	[2142] = {{3,23557},{5,18382},},
 	[1792] = {{2,432639},{3,448324},{4,14590},},
 	[1636] = {{3,14462},{6,9318},},
-	[209] = {{8,23561},},
+	[209] = {{3,23562},{8,23561},},
 	[1785] = {{4,14803},{6,14047},},
 	[1862] = {{3,1213708},},
 	[1661] = {{3,9117},{6,9408},},
@@ -8683,8 +8698,8 @@ local set_bonuses = {
 	[1670] = {{2,29091},{4,30777},{8,18679},},
 	[1707] = {{2,456494},{4,456489},{6,456533},},
 	[211] = {{3,21894},{8,22010},},
-	[1708] = {{6,456541},},
-	[1719] = {{6,457651},},
+	[1708] = {{2,456536},{6,456541},},
+	[1719] = {{2,457645},{6,457651},},
 	[1826] = {{2,468397},{3,468425},{5,468427},},
 	[1702] = {{2,456337},{4,457324},{6,456379},},
 	[402] = {{2,14467},{6,467550},},
@@ -8946,7 +8961,7 @@ local set_bonuses = {
 	[466] = {{2,9336},},
 	[386] = {{2,14467},{3,22804},{6,14049},},
 	[1659] = {{3,9117},{6,9417},},
-	[2146] = {{8,23561},},
+	[2146] = {{3,23562},{8,23561},},
 	[1889] = {{2,1219367},{6,1219369},},
 	[1896] = {{2,1219189},{4,1219191},{6,1219193},},
 	[1645] = {{2,9331},},
@@ -9045,7 +9060,7 @@ local item_effects = {
 			{"ability", "sp_flat", 83, {19750,}, 0, 0},
 	},
 	[1291086] = {
-			{"ability", "effect_mod", 0.04, {20187,20183,}, 0, 0},
+			{"ability", "effect_mod", 0.04, {20187,20467,20183,}, 0, 0},
 	},
 	[459601] = {
 			{"ability", "effect_mod_flat", 20, {407798,20187,20467,}, 0, 0},
@@ -9144,6 +9159,9 @@ local set_effects = {
 	[1300949] = {
 			{"raw", "defense_skill_rating_flat", 7, nil, 2, 0},
 	},
+	[456536] = {
+			{"raw", "block_value_flat", 30, nil, 2, 0},
+	},
 	[1300951] = {
 			{"raw", "melee_haste", 0.01, nil, 33, 0},
 			{"raw", "ranged_haste", 0.01, nil, 33, 0},
@@ -9189,6 +9207,9 @@ local enchant_effects = {
 	[429139] = {
 			{"ability", "ignore_cant_crit", 1, {26573,}, 0, 0},
 	},
+	[456536] = {
+			{"raw", "block_value_flat", 30, nil, 2, 0},
+	},
 	[467507] = {
 			{"ability", "effect_mod_ot", 0.5, {26573,}, 0, 0},
 	},
@@ -9228,6 +9249,7 @@ local enchants = {
 	[7090] = {429144,},
 	[7792] = {456492,},
 	[7800] = {467518,},
+	[7782] = {456536,},
 	[7089] = {429139,},
 	[7785] = {467531,},
 	[7562] = {458860,},

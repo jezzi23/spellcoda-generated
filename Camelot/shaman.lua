@@ -298,7 +298,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 160,
@@ -672,7 +672,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 100,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[6364] = {
 		periodic = {
@@ -879,7 +879,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 100,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[6377] = {
 		periodic = {
@@ -1044,7 +1044,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[10399] = {
 		cast_time = 0,
@@ -1157,7 +1157,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 250,
@@ -1231,7 +1231,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[8027] = {
 		periodic = {
@@ -1285,7 +1285,7 @@ sc.spells = {
 		base_id = 425339,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.base_mana_cost, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[197] = {
 		cast_time = 0,
@@ -1418,7 +1418,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 33000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[324] = {
 		direct = {
@@ -1792,7 +1792,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 9000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[331] = {
 		direct = {
@@ -2210,7 +2210,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 345,
@@ -2326,7 +2326,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 21000,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[8019] = {
 		cast_time = 0,
@@ -2364,7 +2364,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[16356] = {
 		periodic = {
@@ -2903,7 +2903,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[8052] = {
 		direct = {
@@ -2928,7 +2928,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 95,
@@ -2991,7 +2991,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 55,
@@ -3027,7 +3027,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[408696] = {
 		direct = {
@@ -3300,7 +3300,7 @@ sc.spells = {
 			per_lvl = 0,
 			per_lvl_sq = 0,
 			jump_amp = 1,
-			flags = bit.bor(0, comp_flags.periodic),
+			flags = bit.bor(0, comp_flags.periodic, comp_flags.dot_resi_pen),
 		},
 		cast_time = 0,
 		cost = 410,
@@ -3385,7 +3385,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[227] = {
 		cast_time = 0,
@@ -3473,7 +3473,7 @@ sc.spells = {
 		base_id = 408490,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.binary, spell_flags.eval),
 	},
 	[8008] = {
 		direct = {
@@ -3536,7 +3536,7 @@ sc.spells = {
 		base_id = 408681,
 		gcd = 1.5000001,
 		train = 0,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[10586] = {
 		periodic = {
@@ -3695,7 +3695,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 900,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[2484] = {
 		cast_time = 0,
@@ -4147,7 +4147,7 @@ sc.spells = {
 		base_id = 8042,
 		gcd = 1.5000001,
 		train = 3400,
-		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.eval),
+		flags = bit.bor(0, spell_flags.cd, spell_flags.instant, spell_flags.binary, spell_flags.eval),
 	},
 	[10497] = {
 		periodic = {
@@ -4781,6 +4781,9 @@ sc.class_buffs = {
 	[10404] = {
 			{"raw", "player_vuln_phys", 0, nil, 1, 1},
 	},
+	[467910] = {
+			{"raw", "block_value_flat", 30, nil, 2, 0},
+	},
 	[25909] = {
 			{"by_school", "threat", -0.19999999, {1,2,3,4,5,6,7,}, 0, 0},
 	},
@@ -5034,6 +5037,7 @@ local class_aura_info = {
 	[461297] = {dur = 12},
 	[467880] = {dur = 10, charges = 1},
 	[467891] = {dur = 5, charges = 1},
+	[467910] = {dur = 6, stacks = 3},
 	[468460] = {dur = 20},
 	[468526] = {dur = 10, charges = 1},
 	[470272] = {dur = 15, stacks = 5, charges = 1},
@@ -8201,7 +8205,7 @@ local set_bonuses = {
 	[2142] = {{3,23557},{5,18382},},
 	[1792] = {{2,432639},{3,448324},{4,14590},},
 	[1636] = {{3,14462},{6,9318},},
-	[209] = {{8,23561},},
+	[209] = {{3,23562},{8,23561},},
 	[1785] = {{4,14803},{6,14047},},
 	[1862] = {{3,1213708},},
 	[1661] = {{3,9117},{6,9408},},
@@ -8408,8 +8412,8 @@ local set_bonuses = {
 	[1670] = {{2,29091},{4,30777},{8,18679},},
 	[1707] = {{2,456494},{4,456489},{6,456533},},
 	[211] = {{3,21894},{8,22010},},
-	[1708] = {{6,456541},},
-	[1719] = {{6,457651},},
+	[1708] = {{2,456536},{6,456541},},
+	[1719] = {{2,457645},{6,457651},},
 	[1826] = {{2,468397},{3,468425},{5,468427},},
 	[1702] = {{2,456337},{4,457324},{6,456379},},
 	[402] = {{2,14467},{6,467550},},
@@ -8671,7 +8675,7 @@ local set_bonuses = {
 	[466] = {{2,9336},},
 	[386] = {{2,14467},{3,22804},{6,14049},},
 	[1659] = {{3,9117},{6,9417},},
-	[2146] = {{8,23561},},
+	[2146] = {{3,23562},{8,23561},},
 	[1889] = {{2,1219367},{6,1219369},},
 	[1896] = {{2,1219189},{4,1219191},{6,1219193},},
 	[1645] = {{2,9331},},
@@ -8969,6 +8973,7 @@ local enchant_effects = {
 	},
 	[408524] = {
 			{"raw", "block", 0.099999994, nil, 2, 0},
+			{"raw", "block_value_mod", 0.14999999, nil, 33, 1},
 	},
 	[16312] = {
 			{"raw", "ap_flat", 393, nil, 2, 0, nil, nil, 16.1, 44, 52},
